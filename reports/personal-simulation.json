@@ -1,0 +1,3899 @@
+{
+  "schema": "sdes-personal-simulation-report-v1",
+  "simulation": true,
+  "scope": "one local author, two algorithm implementations, one fixed key, all 256 plaintext blocks",
+  "spec_id": "course-sdes-v1-ls1-ls2-sbox2-3012",
+  "key": "1010000010",
+  "implementation_a": {
+    "module": "sdes.core",
+    "method": "integer bit operations"
+  },
+  "implementation_b": {
+    "module": "sdes.peer",
+    "method": "independent string operations"
+  },
+  "external_group_test": false,
+  "cross_platform_test": false,
+  "network_transmission": false,
+  "playback_is_cryptographic_timing": false,
+  "generation_checks": {
+    "simulation_256_rows": true,
+    "simulation_all_three_checks_pass": true,
+    "default_encrypt_result": true,
+    "default_decrypt_result": true,
+    "twenty_steps_each_direction": true
+  },
+  "simulation_result": {
+    "simulation": true,
+    "implementation_a": "A 端 · 整数位运算（sdes.core）",
+    "implementation_b": "B 端 · 独立字符串实现（sdes.peer）",
+    "spec_id": "course-sdes-v1-ls1-ls2-sbox2-3012",
+    "notice": "个人完成的双实现模拟实验；未进行真人跨组测试，不冒充小组实验结果。",
+    "passed": true,
+    "total": 256,
+    "rows": [
+      {
+        "plaintext": "00000000",
+        "key": "1010000010",
+        "a_ciphertext": "00001110",
+        "b_ciphertext": "00001110",
+        "b_decrypted": "00000000",
+        "a_decrypted": "00000000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00000001",
+        "key": "1010000010",
+        "a_ciphertext": "10000001",
+        "b_ciphertext": "10000001",
+        "b_decrypted": "00000001",
+        "a_decrypted": "00000001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00000010",
+        "key": "1010000010",
+        "a_ciphertext": "10101101",
+        "b_ciphertext": "10101101",
+        "b_decrypted": "00000010",
+        "a_decrypted": "00000010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00000011",
+        "key": "1010000010",
+        "a_ciphertext": "01111000",
+        "b_ciphertext": "01111000",
+        "b_decrypted": "00000011",
+        "a_decrypted": "00000011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00000100",
+        "key": "1010000010",
+        "a_ciphertext": "10001011",
+        "b_ciphertext": "10001011",
+        "b_decrypted": "00000100",
+        "a_decrypted": "00000100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00000101",
+        "key": "1010000010",
+        "a_ciphertext": "11100000",
+        "b_ciphertext": "11100000",
+        "b_decrypted": "00000101",
+        "a_decrypted": "00000101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00000110",
+        "key": "1010000010",
+        "a_ciphertext": "11001000",
+        "b_ciphertext": "11001000",
+        "b_decrypted": "00000110",
+        "a_decrypted": "00000110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00000111",
+        "key": "1010000010",
+        "a_ciphertext": "00111101",
+        "b_ciphertext": "00111101",
+        "b_decrypted": "00000111",
+        "a_decrypted": "00000111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00001000",
+        "key": "1010000010",
+        "a_ciphertext": "01110100",
+        "b_ciphertext": "01110100",
+        "b_decrypted": "00001000",
+        "a_decrypted": "00001000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00001001",
+        "key": "1010000010",
+        "a_ciphertext": "01111011",
+        "b_ciphertext": "01111011",
+        "b_decrypted": "00001001",
+        "a_decrypted": "00001001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00001010",
+        "key": "1010000010",
+        "a_ciphertext": "01000011",
+        "b_ciphertext": "01000011",
+        "b_decrypted": "00001010",
+        "a_decrypted": "00001010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00001011",
+        "key": "1010000010",
+        "a_ciphertext": "10110110",
+        "b_ciphertext": "10110110",
+        "b_decrypted": "00001011",
+        "a_decrypted": "00001011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00001100",
+        "key": "1010000010",
+        "a_ciphertext": "00110001",
+        "b_ciphertext": "00110001",
+        "b_decrypted": "00001100",
+        "a_decrypted": "00001100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00001101",
+        "key": "1010000010",
+        "a_ciphertext": "11011110",
+        "b_ciphertext": "11011110",
+        "b_decrypted": "00001101",
+        "a_decrypted": "00001101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00001110",
+        "key": "1010000010",
+        "a_ciphertext": "11000010",
+        "b_ciphertext": "11000010",
+        "b_decrypted": "00001110",
+        "a_decrypted": "00001110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00001111",
+        "key": "1010000010",
+        "a_ciphertext": "00010011",
+        "b_ciphertext": "00010011",
+        "b_decrypted": "00001111",
+        "a_decrypted": "00001111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00010000",
+        "key": "1010000010",
+        "a_ciphertext": "11110111",
+        "b_ciphertext": "11110111",
+        "b_decrypted": "00010000",
+        "a_decrypted": "00010000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00010001",
+        "key": "1010000010",
+        "a_ciphertext": "00010000",
+        "b_ciphertext": "00010000",
+        "b_decrypted": "00010001",
+        "a_decrypted": "00010001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00010010",
+        "key": "1010000010",
+        "a_ciphertext": "10100010",
+        "b_ciphertext": "10100010",
+        "b_decrypted": "00010010",
+        "a_decrypted": "00010010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00010011",
+        "key": "1010000010",
+        "a_ciphertext": "10011011",
+        "b_ciphertext": "10011011",
+        "b_decrypted": "00010011",
+        "a_decrypted": "00010011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00010100",
+        "key": "1010000010",
+        "a_ciphertext": "01010010",
+        "b_ciphertext": "01010010",
+        "b_decrypted": "00010100",
+        "a_decrypted": "00010100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00010101",
+        "key": "1010000010",
+        "a_ciphertext": "01010101",
+        "b_ciphertext": "01010101",
+        "b_decrypted": "00010101",
+        "a_decrypted": "00010101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00010110",
+        "key": "1010000010",
+        "a_ciphertext": "00100011",
+        "b_ciphertext": "00100011",
+        "b_decrypted": "00010110",
+        "a_decrypted": "00010110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00010111",
+        "key": "1010000010",
+        "a_ciphertext": "00111110",
+        "b_ciphertext": "00111110",
+        "b_decrypted": "00010111",
+        "a_decrypted": "00010111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00011000",
+        "key": "1010000010",
+        "a_ciphertext": "01101110",
+        "b_ciphertext": "01101110",
+        "b_decrypted": "00011000",
+        "a_decrypted": "00011000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00011001",
+        "key": "1010000010",
+        "a_ciphertext": "00101100",
+        "b_ciphertext": "00101100",
+        "b_decrypted": "00011001",
+        "a_decrypted": "00011001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00011010",
+        "key": "1010000010",
+        "a_ciphertext": "11001101",
+        "b_ciphertext": "11001101",
+        "b_decrypted": "00011010",
+        "a_decrypted": "00011010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00011011",
+        "key": "1010000010",
+        "a_ciphertext": "11110101",
+        "b_ciphertext": "11110101",
+        "b_decrypted": "00011011",
+        "a_decrypted": "00011011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00011100",
+        "key": "1010000010",
+        "a_ciphertext": "11101011",
+        "b_ciphertext": "11101011",
+        "b_decrypted": "00011100",
+        "a_decrypted": "00011100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00011101",
+        "key": "1010000010",
+        "a_ciphertext": "01001001",
+        "b_ciphertext": "01001001",
+        "b_decrypted": "00011101",
+        "a_decrypted": "00011101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00011110",
+        "key": "1010000010",
+        "a_ciphertext": "10101000",
+        "b_ciphertext": "10101000",
+        "b_decrypted": "00011110",
+        "a_decrypted": "00011110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00011111",
+        "key": "1010000010",
+        "a_ciphertext": "10110000",
+        "b_ciphertext": "10110000",
+        "b_decrypted": "00011111",
+        "a_decrypted": "00011111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00100000",
+        "key": "1010000010",
+        "a_ciphertext": "01100010",
+        "b_ciphertext": "01100010",
+        "b_decrypted": "00100000",
+        "a_decrypted": "00100000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00100001",
+        "key": "1010000010",
+        "a_ciphertext": "00101001",
+        "b_ciphertext": "00101001",
+        "b_decrypted": "00100001",
+        "a_decrypted": "00100001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00100010",
+        "key": "1010000010",
+        "a_ciphertext": "00000101",
+        "b_ciphertext": "00000101",
+        "b_decrypted": "00100010",
+        "a_decrypted": "00100010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00100011",
+        "key": "1010000010",
+        "a_ciphertext": "11010000",
+        "b_ciphertext": "11010000",
+        "b_decrypted": "00100011",
+        "a_decrypted": "00100011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00100100",
+        "key": "1010000010",
+        "a_ciphertext": "11100011",
+        "b_ciphertext": "11100011",
+        "b_decrypted": "00100100",
+        "a_decrypted": "00100100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00100101",
+        "key": "1010000010",
+        "a_ciphertext": "01001100",
+        "b_ciphertext": "01001100",
+        "b_decrypted": "00100101",
+        "a_decrypted": "00100101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00100110",
+        "key": "1010000010",
+        "a_ciphertext": "01100100",
+        "b_ciphertext": "01100100",
+        "b_decrypted": "00100110",
+        "a_decrypted": "00100110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00100111",
+        "key": "1010000010",
+        "a_ciphertext": "10010101",
+        "b_ciphertext": "10010101",
+        "b_decrypted": "00100111",
+        "a_decrypted": "00100111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00101000",
+        "key": "1010000010",
+        "a_ciphertext": "11011100",
+        "b_ciphertext": "11011100",
+        "b_decrypted": "00101000",
+        "a_decrypted": "00101000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00101001",
+        "key": "1010000010",
+        "a_ciphertext": "10010011",
+        "b_ciphertext": "10010011",
+        "b_decrypted": "00101001",
+        "a_decrypted": "00101001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00101010",
+        "key": "1010000010",
+        "a_ciphertext": "00101011",
+        "b_ciphertext": "00101011",
+        "b_decrypted": "00101010",
+        "a_decrypted": "00101010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00101011",
+        "key": "1010000010",
+        "a_ciphertext": "01011110",
+        "b_ciphertext": "01011110",
+        "b_decrypted": "00101011",
+        "a_decrypted": "00101011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00101100",
+        "key": "1010000010",
+        "a_ciphertext": "10011001",
+        "b_ciphertext": "10011001",
+        "b_decrypted": "00101100",
+        "a_decrypted": "00101100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00101101",
+        "key": "1010000010",
+        "a_ciphertext": "00110110",
+        "b_ciphertext": "00110110",
+        "b_decrypted": "00101101",
+        "a_decrypted": "00101101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00101110",
+        "key": "1010000010",
+        "a_ciphertext": "10101110",
+        "b_ciphertext": "10101110",
+        "b_decrypted": "00101110",
+        "a_decrypted": "00101110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00101111",
+        "key": "1010000010",
+        "a_ciphertext": "11111011",
+        "b_ciphertext": "11111011",
+        "b_decrypted": "00101111",
+        "a_decrypted": "00101111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00110000",
+        "key": "1010000010",
+        "a_ciphertext": "00011111",
+        "b_ciphertext": "00011111",
+        "b_decrypted": "00110000",
+        "a_decrypted": "00110000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00110001",
+        "key": "1010000010",
+        "a_ciphertext": "10111000",
+        "b_ciphertext": "10111000",
+        "b_decrypted": "00110001",
+        "a_decrypted": "00110001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00110010",
+        "key": "1010000010",
+        "a_ciphertext": "11001110",
+        "b_ciphertext": "11001110",
+        "b_decrypted": "00110010",
+        "a_decrypted": "00110010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00110011",
+        "key": "1010000010",
+        "a_ciphertext": "01110011",
+        "b_ciphertext": "01110011",
+        "b_decrypted": "00110011",
+        "a_decrypted": "00110011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00110100",
+        "key": "1010000010",
+        "a_ciphertext": "10111010",
+        "b_ciphertext": "10111010",
+        "b_decrypted": "00110100",
+        "a_decrypted": "00110100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00110101",
+        "key": "1010000010",
+        "a_ciphertext": "11111101",
+        "b_ciphertext": "11111101",
+        "b_decrypted": "00110101",
+        "a_decrypted": "00110101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00110110",
+        "key": "1010000010",
+        "a_ciphertext": "01001011",
+        "b_ciphertext": "01001011",
+        "b_decrypted": "00110110",
+        "a_decrypted": "00110110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00110111",
+        "key": "1010000010",
+        "a_ciphertext": "11010110",
+        "b_ciphertext": "11010110",
+        "b_decrypted": "00110111",
+        "a_decrypted": "00110111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00111000",
+        "key": "1010000010",
+        "a_ciphertext": "00000010",
+        "b_ciphertext": "00000010",
+        "b_decrypted": "00111000",
+        "a_decrypted": "00111000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00111001",
+        "key": "1010000010",
+        "a_ciphertext": "10000000",
+        "b_ciphertext": "10000000",
+        "b_decrypted": "00111001",
+        "a_decrypted": "00111001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00111010",
+        "key": "1010000010",
+        "a_ciphertext": "01100101",
+        "b_ciphertext": "01100101",
+        "b_decrypted": "00111010",
+        "a_decrypted": "00111010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00111011",
+        "key": "1010000010",
+        "a_ciphertext": "01011101",
+        "b_ciphertext": "01011101",
+        "b_decrypted": "00111011",
+        "a_decrypted": "00111011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00111100",
+        "key": "1010000010",
+        "a_ciphertext": "10000011",
+        "b_ciphertext": "10000011",
+        "b_decrypted": "00111100",
+        "a_decrypted": "00111100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00111101",
+        "key": "1010000010",
+        "a_ciphertext": "11100001",
+        "b_ciphertext": "11100001",
+        "b_decrypted": "00111101",
+        "a_decrypted": "00111101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00111110",
+        "key": "1010000010",
+        "a_ciphertext": "00000100",
+        "b_ciphertext": "00000100",
+        "b_decrypted": "00111110",
+        "a_decrypted": "00111110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "00111111",
+        "key": "1010000010",
+        "a_ciphertext": "00011000",
+        "b_ciphertext": "00011000",
+        "b_decrypted": "00111111",
+        "a_decrypted": "00111111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01000000",
+        "key": "1010000010",
+        "a_ciphertext": "11111010",
+        "b_ciphertext": "11111010",
+        "b_decrypted": "01000000",
+        "a_decrypted": "01000000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01000001",
+        "key": "1010000010",
+        "a_ciphertext": "00010101",
+        "b_ciphertext": "00010101",
+        "b_decrypted": "01000001",
+        "a_decrypted": "01000001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01000010",
+        "key": "1010000010",
+        "a_ciphertext": "00111001",
+        "b_ciphertext": "00111001",
+        "b_decrypted": "01000010",
+        "a_decrypted": "01000010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01000011",
+        "key": "1010000010",
+        "a_ciphertext": "11001100",
+        "b_ciphertext": "11001100",
+        "b_decrypted": "01000011",
+        "a_decrypted": "01000011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01000100",
+        "key": "1010000010",
+        "a_ciphertext": "01011111",
+        "b_ciphertext": "01011111",
+        "b_decrypted": "01000100",
+        "a_decrypted": "01000100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01000101",
+        "key": "1010000010",
+        "a_ciphertext": "01010000",
+        "b_ciphertext": "01010000",
+        "b_decrypted": "01000101",
+        "a_decrypted": "01000101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01000110",
+        "key": "1010000010",
+        "a_ciphertext": "01111100",
+        "b_ciphertext": "01111100",
+        "b_decrypted": "01000110",
+        "a_decrypted": "01000110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01000111",
+        "key": "1010000010",
+        "a_ciphertext": "10101001",
+        "b_ciphertext": "10101001",
+        "b_decrypted": "01000111",
+        "a_decrypted": "01000111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01001000",
+        "key": "1010000010",
+        "a_ciphertext": "11000100",
+        "b_ciphertext": "11000100",
+        "b_decrypted": "01001000",
+        "a_decrypted": "01001000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01001001",
+        "key": "1010000010",
+        "a_ciphertext": "10101111",
+        "b_ciphertext": "10101111",
+        "b_decrypted": "01001001",
+        "a_decrypted": "01001001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01001010",
+        "key": "1010000010",
+        "a_ciphertext": "00010111",
+        "b_ciphertext": "00010111",
+        "b_decrypted": "01001010",
+        "a_decrypted": "01001010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01001011",
+        "key": "1010000010",
+        "a_ciphertext": "11000110",
+        "b_ciphertext": "11000110",
+        "b_decrypted": "01001011",
+        "a_decrypted": "01001011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01001100",
+        "key": "1010000010",
+        "a_ciphertext": "10100101",
+        "b_ciphertext": "10100101",
+        "b_decrypted": "01001100",
+        "a_decrypted": "01001100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01001101",
+        "key": "1010000010",
+        "a_ciphertext": "00101010",
+        "b_ciphertext": "00101010",
+        "b_decrypted": "01001101",
+        "a_decrypted": "01001101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01001110",
+        "key": "1010000010",
+        "a_ciphertext": "10110010",
+        "b_ciphertext": "10110010",
+        "b_decrypted": "01001110",
+        "a_decrypted": "01001110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01001111",
+        "key": "1010000010",
+        "a_ciphertext": "01000111",
+        "b_ciphertext": "01000111",
+        "b_decrypted": "01001111",
+        "a_decrypted": "01001111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01010000",
+        "key": "1010000010",
+        "a_ciphertext": "10100011",
+        "b_ciphertext": "10100011",
+        "b_decrypted": "01010000",
+        "a_decrypted": "01010000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01010001",
+        "key": "1010000010",
+        "a_ciphertext": "10100000",
+        "b_ciphertext": "10100000",
+        "b_decrypted": "01010001",
+        "a_decrypted": "01010001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01010010",
+        "key": "1010000010",
+        "a_ciphertext": "11010010",
+        "b_ciphertext": "11010010",
+        "b_decrypted": "01010010",
+        "a_decrypted": "01010010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01010011",
+        "key": "1010000010",
+        "a_ciphertext": "01001111",
+        "b_ciphertext": "01001111",
+        "b_decrypted": "01010011",
+        "a_decrypted": "01010011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01010100",
+        "key": "1010000010",
+        "a_ciphertext": "00100010",
+        "b_ciphertext": "00100010",
+        "b_decrypted": "01010100",
+        "a_decrypted": "01010100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01010101",
+        "key": "1010000010",
+        "a_ciphertext": "11000001",
+        "b_ciphertext": "11000001",
+        "b_decrypted": "01010101",
+        "a_decrypted": "01010101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01010110",
+        "key": "1010000010",
+        "a_ciphertext": "01110111",
+        "b_ciphertext": "01110111",
+        "b_decrypted": "01010110",
+        "a_decrypted": "01010110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01010111",
+        "key": "1010000010",
+        "a_ciphertext": "11001010",
+        "b_ciphertext": "11001010",
+        "b_decrypted": "01010111",
+        "a_decrypted": "01010111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01011000",
+        "key": "1010000010",
+        "a_ciphertext": "10011010",
+        "b_ciphertext": "10011010",
+        "b_decrypted": "01011000",
+        "a_decrypted": "01011000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01011001",
+        "key": "1010000010",
+        "a_ciphertext": "10011000",
+        "b_ciphertext": "10011000",
+        "b_decrypted": "01011001",
+        "a_decrypted": "01011001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01011010",
+        "key": "1010000010",
+        "a_ciphertext": "01011001",
+        "b_ciphertext": "01011001",
+        "b_decrypted": "01011010",
+        "a_decrypted": "01011010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01011011",
+        "key": "1010000010",
+        "a_ciphertext": "01100001",
+        "b_ciphertext": "01100001",
+        "b_decrypted": "01011011",
+        "a_decrypted": "01011011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01011100",
+        "key": "1010000010",
+        "a_ciphertext": "00111111",
+        "b_ciphertext": "00111111",
+        "b_decrypted": "01011100",
+        "a_decrypted": "01011100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01011101",
+        "key": "1010000010",
+        "a_ciphertext": "11011101",
+        "b_ciphertext": "11011101",
+        "b_decrypted": "01011101",
+        "a_decrypted": "01011101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01011110",
+        "key": "1010000010",
+        "a_ciphertext": "00011100",
+        "b_ciphertext": "00011100",
+        "b_decrypted": "01011110",
+        "a_decrypted": "01011110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01011111",
+        "key": "1010000010",
+        "a_ciphertext": "00000000",
+        "b_ciphertext": "00000000",
+        "b_decrypted": "01011111",
+        "a_decrypted": "01011111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01100000",
+        "key": "1010000010",
+        "a_ciphertext": "00010010",
+        "b_ciphertext": "00010010",
+        "b_decrypted": "01100000",
+        "a_decrypted": "01100000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01100001",
+        "key": "1010000010",
+        "a_ciphertext": "10111101",
+        "b_ciphertext": "10111101",
+        "b_decrypted": "01100001",
+        "a_decrypted": "01100001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01100010",
+        "key": "1010000010",
+        "a_ciphertext": "10010001",
+        "b_ciphertext": "10010001",
+        "b_decrypted": "01100010",
+        "a_decrypted": "01100010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01100011",
+        "key": "1010000010",
+        "a_ciphertext": "01100000",
+        "b_ciphertext": "01100000",
+        "b_decrypted": "01100011",
+        "a_decrypted": "01100011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01100100",
+        "key": "1010000010",
+        "a_ciphertext": "10110111",
+        "b_ciphertext": "10110111",
+        "b_decrypted": "01100100",
+        "a_decrypted": "01100100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01100101",
+        "key": "1010000010",
+        "a_ciphertext": "11111000",
+        "b_ciphertext": "11111000",
+        "b_decrypted": "01100101",
+        "a_decrypted": "01100101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01100110",
+        "key": "1010000010",
+        "a_ciphertext": "11010100",
+        "b_ciphertext": "11010100",
+        "b_decrypted": "01100110",
+        "a_decrypted": "01100110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01100111",
+        "key": "1010000010",
+        "a_ciphertext": "00000001",
+        "b_ciphertext": "00000001",
+        "b_decrypted": "01100111",
+        "a_decrypted": "01100111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01101000",
+        "key": "1010000010",
+        "a_ciphertext": "01101000",
+        "b_ciphertext": "01101000",
+        "b_decrypted": "01101000",
+        "a_decrypted": "01101000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01101001",
+        "key": "1010000010",
+        "a_ciphertext": "11000111",
+        "b_ciphertext": "11000111",
+        "b_decrypted": "01101001",
+        "a_decrypted": "01101001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01101010",
+        "key": "1010000010",
+        "a_ciphertext": "11111111",
+        "b_ciphertext": "11111111",
+        "b_decrypted": "01101010",
+        "a_decrypted": "01101010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01101011",
+        "key": "1010000010",
+        "a_ciphertext": "10101010",
+        "b_ciphertext": "10101010",
+        "b_decrypted": "01101011",
+        "a_decrypted": "01101011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01101100",
+        "key": "1010000010",
+        "a_ciphertext": "00001101",
+        "b_ciphertext": "00001101",
+        "b_decrypted": "01101100",
+        "a_decrypted": "01101100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01101101",
+        "key": "1010000010",
+        "a_ciphertext": "01000110",
+        "b_ciphertext": "01000110",
+        "b_decrypted": "01101101",
+        "a_decrypted": "01101101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01101110",
+        "key": "1010000010",
+        "a_ciphertext": "01011010",
+        "b_ciphertext": "01011010",
+        "b_decrypted": "01101110",
+        "a_decrypted": "01101110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01101111",
+        "key": "1010000010",
+        "a_ciphertext": "00101111",
+        "b_ciphertext": "00101111",
+        "b_decrypted": "01101111",
+        "a_decrypted": "01101111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01110000",
+        "key": "1010000010",
+        "a_ciphertext": "11001011",
+        "b_ciphertext": "11001011",
+        "b_decrypted": "01110000",
+        "a_decrypted": "01110000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01110001",
+        "key": "1010000010",
+        "a_ciphertext": "00001100",
+        "b_ciphertext": "00001100",
+        "b_decrypted": "01110001",
+        "a_decrypted": "01110001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01110010",
+        "key": "1010000010",
+        "a_ciphertext": "00111010",
+        "b_ciphertext": "00111010",
+        "b_decrypted": "01110010",
+        "a_decrypted": "01110010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01110011",
+        "key": "1010000010",
+        "a_ciphertext": "00100111",
+        "b_ciphertext": "00100111",
+        "b_decrypted": "01110011",
+        "a_decrypted": "01110011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01110100",
+        "key": "1010000010",
+        "a_ciphertext": "01001110",
+        "b_ciphertext": "01001110",
+        "b_decrypted": "01110100",
+        "a_decrypted": "01110100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01110101",
+        "key": "1010000010",
+        "a_ciphertext": "01101001",
+        "b_ciphertext": "01101001",
+        "b_decrypted": "01110101",
+        "a_decrypted": "01110101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01110110",
+        "key": "1010000010",
+        "a_ciphertext": "10011111",
+        "b_ciphertext": "10011111",
+        "b_decrypted": "01110110",
+        "a_decrypted": "01110110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01110111",
+        "key": "1010000010",
+        "a_ciphertext": "10100110",
+        "b_ciphertext": "10100110",
+        "b_decrypted": "01110111",
+        "a_decrypted": "01110111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01111000",
+        "key": "1010000010",
+        "a_ciphertext": "01110010",
+        "b_ciphertext": "01110010",
+        "b_decrypted": "01111000",
+        "a_decrypted": "01111000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01111001",
+        "key": "1010000010",
+        "a_ciphertext": "00110000",
+        "b_ciphertext": "00110000",
+        "b_decrypted": "01111001",
+        "a_decrypted": "01111001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01111010",
+        "key": "1010000010",
+        "a_ciphertext": "11110001",
+        "b_ciphertext": "11110001",
+        "b_decrypted": "01111010",
+        "a_decrypted": "01111010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01111011",
+        "key": "1010000010",
+        "a_ciphertext": "11001001",
+        "b_ciphertext": "11001001",
+        "b_decrypted": "01111011",
+        "a_decrypted": "01111011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01111100",
+        "key": "1010000010",
+        "a_ciphertext": "11010111",
+        "b_ciphertext": "11010111",
+        "b_decrypted": "01111100",
+        "a_decrypted": "01111100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01111101",
+        "key": "1010000010",
+        "a_ciphertext": "01110101",
+        "b_ciphertext": "01110101",
+        "b_decrypted": "01111101",
+        "a_decrypted": "01111101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01111110",
+        "key": "1010000010",
+        "a_ciphertext": "10110100",
+        "b_ciphertext": "10110100",
+        "b_decrypted": "01111110",
+        "a_decrypted": "01111110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "01111111",
+        "key": "1010000010",
+        "a_ciphertext": "10101100",
+        "b_ciphertext": "10101100",
+        "b_decrypted": "01111111",
+        "a_decrypted": "01111111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10000000",
+        "key": "1010000010",
+        "a_ciphertext": "01001000",
+        "b_ciphertext": "01001000",
+        "b_decrypted": "10000000",
+        "a_decrypted": "10000000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10000001",
+        "key": "1010000010",
+        "a_ciphertext": "11100111",
+        "b_ciphertext": "11100111",
+        "b_decrypted": "10000001",
+        "a_decrypted": "10000001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10000010",
+        "key": "1010000010",
+        "a_ciphertext": "00001011",
+        "b_ciphertext": "00001011",
+        "b_decrypted": "10000010",
+        "a_decrypted": "10000010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10000011",
+        "key": "1010000010",
+        "a_ciphertext": "01111110",
+        "b_ciphertext": "01111110",
+        "b_decrypted": "10000011",
+        "a_decrypted": "10000011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10000100",
+        "key": "1010000010",
+        "a_ciphertext": "00101101",
+        "b_ciphertext": "00101101",
+        "b_decrypted": "10000100",
+        "a_decrypted": "10000100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10000101",
+        "key": "1010000010",
+        "a_ciphertext": "01100110",
+        "b_ciphertext": "01100110",
+        "b_decrypted": "10000101",
+        "a_decrypted": "10000101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10000110",
+        "key": "1010000010",
+        "a_ciphertext": "10001110",
+        "b_ciphertext": "10001110",
+        "b_decrypted": "10000110",
+        "a_decrypted": "10000110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10000111",
+        "key": "1010000010",
+        "a_ciphertext": "11011011",
+        "b_ciphertext": "11011011",
+        "b_decrypted": "10000111",
+        "a_decrypted": "10000111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10001000",
+        "key": "1010000010",
+        "a_ciphertext": "00110010",
+        "b_ciphertext": "00110010",
+        "b_decrypted": "10001000",
+        "a_decrypted": "10001000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10001001",
+        "key": "1010000010",
+        "a_ciphertext": "10011101",
+        "b_ciphertext": "10011101",
+        "b_decrypted": "10001001",
+        "a_decrypted": "10001001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10001010",
+        "key": "1010000010",
+        "a_ciphertext": "00100101",
+        "b_ciphertext": "00100101",
+        "b_decrypted": "10001010",
+        "a_decrypted": "10001010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10001011",
+        "key": "1010000010",
+        "a_ciphertext": "11110000",
+        "b_ciphertext": "11110000",
+        "b_decrypted": "10001011",
+        "a_decrypted": "10001011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10001100",
+        "key": "1010000010",
+        "a_ciphertext": "10010111",
+        "b_ciphertext": "10010111",
+        "b_decrypted": "10001100",
+        "a_decrypted": "10001100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10001101",
+        "key": "1010000010",
+        "a_ciphertext": "11011000",
+        "b_ciphertext": "11011000",
+        "b_decrypted": "10001101",
+        "a_decrypted": "10001101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10001110",
+        "key": "1010000010",
+        "a_ciphertext": "01000100",
+        "b_ciphertext": "01000100",
+        "b_decrypted": "10001110",
+        "a_decrypted": "10001110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10001111",
+        "key": "1010000010",
+        "a_ciphertext": "10110101",
+        "b_ciphertext": "10110101",
+        "b_decrypted": "10001111",
+        "a_decrypted": "10001111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10010000",
+        "key": "1010000010",
+        "a_ciphertext": "01010001",
+        "b_ciphertext": "01010001",
+        "b_decrypted": "10010000",
+        "a_decrypted": "10010000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10010001",
+        "key": "1010000010",
+        "a_ciphertext": "01010110",
+        "b_ciphertext": "01010110",
+        "b_decrypted": "10010001",
+        "a_decrypted": "10010001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10010010",
+        "key": "1010000010",
+        "a_ciphertext": "00100100",
+        "b_ciphertext": "00100100",
+        "b_decrypted": "10010010",
+        "a_decrypted": "10010010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10010011",
+        "key": "1010000010",
+        "a_ciphertext": "01111101",
+        "b_ciphertext": "01111101",
+        "b_decrypted": "10010011",
+        "a_decrypted": "10010011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10010100",
+        "key": "1010000010",
+        "a_ciphertext": "00010100",
+        "b_ciphertext": "00010100",
+        "b_decrypted": "10010100",
+        "a_decrypted": "10010100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10010101",
+        "key": "1010000010",
+        "a_ciphertext": "11110011",
+        "b_ciphertext": "11110011",
+        "b_decrypted": "10010101",
+        "a_decrypted": "10010101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10010110",
+        "key": "1010000010",
+        "a_ciphertext": "01000101",
+        "b_ciphertext": "01000101",
+        "b_decrypted": "10010110",
+        "a_decrypted": "10010110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10010111",
+        "key": "1010000010",
+        "a_ciphertext": "00111000",
+        "b_ciphertext": "00111000",
+        "b_decrypted": "10010111",
+        "a_decrypted": "10010111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10011000",
+        "key": "1010000010",
+        "a_ciphertext": "00101000",
+        "b_ciphertext": "00101000",
+        "b_decrypted": "10011000",
+        "a_decrypted": "10011000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10011001",
+        "key": "1010000010",
+        "a_ciphertext": "01101010",
+        "b_ciphertext": "01101010",
+        "b_decrypted": "10011001",
+        "a_decrypted": "10011001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10011010",
+        "key": "1010000010",
+        "a_ciphertext": "01101011",
+        "b_ciphertext": "01101011",
+        "b_decrypted": "10011010",
+        "a_decrypted": "10011010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10011011",
+        "key": "1010000010",
+        "a_ciphertext": "01010011",
+        "b_ciphertext": "01010011",
+        "b_decrypted": "10011011",
+        "a_decrypted": "10011011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10011100",
+        "key": "1010000010",
+        "a_ciphertext": "01001101",
+        "b_ciphertext": "01001101",
+        "b_decrypted": "10011100",
+        "a_decrypted": "10011100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10011101",
+        "key": "1010000010",
+        "a_ciphertext": "11101111",
+        "b_ciphertext": "11101111",
+        "b_decrypted": "10011101",
+        "a_decrypted": "10011101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10011110",
+        "key": "1010000010",
+        "a_ciphertext": "11101110",
+        "b_ciphertext": "11101110",
+        "b_decrypted": "10011110",
+        "a_decrypted": "10011110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10011111",
+        "key": "1010000010",
+        "a_ciphertext": "11110110",
+        "b_ciphertext": "11110110",
+        "b_decrypted": "10011111",
+        "a_decrypted": "10011111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10100000",
+        "key": "1010000010",
+        "a_ciphertext": "11100100",
+        "b_ciphertext": "11100100",
+        "b_decrypted": "10100000",
+        "a_decrypted": "10100000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10100001",
+        "key": "1010000010",
+        "a_ciphertext": "10001111",
+        "b_ciphertext": "10001111",
+        "b_decrypted": "10100001",
+        "a_decrypted": "10100001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10100010",
+        "key": "1010000010",
+        "a_ciphertext": "01100011",
+        "b_ciphertext": "01100011",
+        "b_decrypted": "10100010",
+        "a_decrypted": "10100010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10100011",
+        "key": "1010000010",
+        "a_ciphertext": "10010110",
+        "b_ciphertext": "10010110",
+        "b_decrypted": "10100011",
+        "a_decrypted": "10100011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10100100",
+        "key": "1010000010",
+        "a_ciphertext": "10000101",
+        "b_ciphertext": "10000101",
+        "b_decrypted": "10100100",
+        "a_decrypted": "10100100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10100101",
+        "key": "1010000010",
+        "a_ciphertext": "00001010",
+        "b_ciphertext": "00001010",
+        "b_decrypted": "10100101",
+        "a_decrypted": "10100101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10100110",
+        "key": "1010000010",
+        "a_ciphertext": "11100010",
+        "b_ciphertext": "11100010",
+        "b_decrypted": "10100110",
+        "a_decrypted": "10100110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10100111",
+        "key": "1010000010",
+        "a_ciphertext": "00110011",
+        "b_ciphertext": "00110011",
+        "b_decrypted": "10100111",
+        "a_decrypted": "10100111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10101000",
+        "key": "1010000010",
+        "a_ciphertext": "11011010",
+        "b_ciphertext": "11011010",
+        "b_decrypted": "10101000",
+        "a_decrypted": "10101000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10101001",
+        "key": "1010000010",
+        "a_ciphertext": "00110101",
+        "b_ciphertext": "00110101",
+        "b_decrypted": "10101001",
+        "a_decrypted": "10101001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10101010",
+        "key": "1010000010",
+        "a_ciphertext": "10001101",
+        "b_ciphertext": "10001101",
+        "b_decrypted": "10101010",
+        "a_decrypted": "10101010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10101011",
+        "key": "1010000010",
+        "a_ciphertext": "01011000",
+        "b_ciphertext": "01011000",
+        "b_decrypted": "10101011",
+        "a_decrypted": "10101011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10101100",
+        "key": "1010000010",
+        "a_ciphertext": "01111111",
+        "b_ciphertext": "01111111",
+        "b_decrypted": "10101100",
+        "a_decrypted": "10101100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10101101",
+        "key": "1010000010",
+        "a_ciphertext": "01110000",
+        "b_ciphertext": "01110000",
+        "b_decrypted": "10101101",
+        "a_decrypted": "10101101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10101110",
+        "key": "1010000010",
+        "a_ciphertext": "11101000",
+        "b_ciphertext": "11101000",
+        "b_decrypted": "10101110",
+        "a_decrypted": "10101110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10101111",
+        "key": "1010000010",
+        "a_ciphertext": "00011101",
+        "b_ciphertext": "00011101",
+        "b_decrypted": "10101111",
+        "a_decrypted": "10101111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10110000",
+        "key": "1010000010",
+        "a_ciphertext": "11111001",
+        "b_ciphertext": "11111001",
+        "b_decrypted": "10110000",
+        "a_decrypted": "10110000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10110001",
+        "key": "1010000010",
+        "a_ciphertext": "10111110",
+        "b_ciphertext": "10111110",
+        "b_decrypted": "10110001",
+        "a_decrypted": "10110001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10110010",
+        "key": "1010000010",
+        "a_ciphertext": "10001000",
+        "b_ciphertext": "10001000",
+        "b_decrypted": "10110010",
+        "a_decrypted": "10110010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10110011",
+        "key": "1010000010",
+        "a_ciphertext": "11010101",
+        "b_ciphertext": "11010101",
+        "b_decrypted": "10110011",
+        "a_decrypted": "10110011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10110100",
+        "key": "1010000010",
+        "a_ciphertext": "10111100",
+        "b_ciphertext": "10111100",
+        "b_decrypted": "10110100",
+        "a_decrypted": "10110100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10110101",
+        "key": "1010000010",
+        "a_ciphertext": "00011011",
+        "b_ciphertext": "00011011",
+        "b_decrypted": "10110101",
+        "a_decrypted": "10110101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10110110",
+        "key": "1010000010",
+        "a_ciphertext": "11101101",
+        "b_ciphertext": "11101101",
+        "b_decrypted": "10110110",
+        "a_decrypted": "10110110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10110111",
+        "key": "1010000010",
+        "a_ciphertext": "10010000",
+        "b_ciphertext": "10010000",
+        "b_decrypted": "10110111",
+        "a_decrypted": "10110111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10111000",
+        "key": "1010000010",
+        "a_ciphertext": "10000100",
+        "b_ciphertext": "10000100",
+        "b_decrypted": "10111000",
+        "a_decrypted": "10111000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10111001",
+        "key": "1010000010",
+        "a_ciphertext": "00000110",
+        "b_ciphertext": "00000110",
+        "b_decrypted": "10111001",
+        "a_decrypted": "10111001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10111010",
+        "key": "1010000010",
+        "a_ciphertext": "00000011",
+        "b_ciphertext": "00000011",
+        "b_decrypted": "10111010",
+        "a_decrypted": "10111010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10111011",
+        "key": "1010000010",
+        "a_ciphertext": "10111011",
+        "b_ciphertext": "10111011",
+        "b_decrypted": "10111011",
+        "a_decrypted": "10111011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10111100",
+        "key": "1010000010",
+        "a_ciphertext": "11100101",
+        "b_ciphertext": "11100101",
+        "b_decrypted": "10111100",
+        "a_decrypted": "10111100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10111101",
+        "key": "1010000010",
+        "a_ciphertext": "10000111",
+        "b_ciphertext": "10000111",
+        "b_decrypted": "10111101",
+        "a_decrypted": "10111101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10111110",
+        "key": "1010000010",
+        "a_ciphertext": "10000010",
+        "b_ciphertext": "10000010",
+        "b_decrypted": "10111110",
+        "a_decrypted": "10111110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "10111111",
+        "key": "1010000010",
+        "a_ciphertext": "00011110",
+        "b_ciphertext": "00011110",
+        "b_decrypted": "10111111",
+        "a_decrypted": "10111111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11000000",
+        "key": "1010000010",
+        "a_ciphertext": "11111100",
+        "b_ciphertext": "11111100",
+        "b_decrypted": "11000000",
+        "a_decrypted": "11000000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11000001",
+        "key": "1010000010",
+        "a_ciphertext": "10110011",
+        "b_ciphertext": "10110011",
+        "b_decrypted": "11000001",
+        "a_decrypted": "11000001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11000010",
+        "key": "1010000010",
+        "a_ciphertext": "11011111",
+        "b_ciphertext": "11011111",
+        "b_decrypted": "11000010",
+        "a_decrypted": "11000010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11000011",
+        "key": "1010000010",
+        "a_ciphertext": "10001010",
+        "b_ciphertext": "10001010",
+        "b_decrypted": "11000011",
+        "a_decrypted": "11000011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11000100",
+        "key": "1010000010",
+        "a_ciphertext": "10111001",
+        "b_ciphertext": "10111001",
+        "b_decrypted": "11000100",
+        "a_decrypted": "11000100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11000101",
+        "key": "1010000010",
+        "a_ciphertext": "00010110",
+        "b_ciphertext": "00010110",
+        "b_decrypted": "11000101",
+        "a_decrypted": "11000101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11000110",
+        "key": "1010000010",
+        "a_ciphertext": "01111010",
+        "b_ciphertext": "01111010",
+        "b_decrypted": "11000110",
+        "a_decrypted": "11000110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11000111",
+        "key": "1010000010",
+        "a_ciphertext": "00001111",
+        "b_ciphertext": "00001111",
+        "b_decrypted": "11000111",
+        "a_decrypted": "11000111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11001000",
+        "key": "1010000010",
+        "a_ciphertext": "01000010",
+        "b_ciphertext": "01000010",
+        "b_decrypted": "11001000",
+        "a_decrypted": "11001000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11001001",
+        "key": "1010000010",
+        "a_ciphertext": "00001001",
+        "b_ciphertext": "00001001",
+        "b_decrypted": "11001001",
+        "a_decrypted": "11001001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11001010",
+        "key": "1010000010",
+        "a_ciphertext": "10110001",
+        "b_ciphertext": "10110001",
+        "b_decrypted": "11001010",
+        "a_decrypted": "11001010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11001011",
+        "key": "1010000010",
+        "a_ciphertext": "01000000",
+        "b_ciphertext": "01000000",
+        "b_decrypted": "11001011",
+        "a_decrypted": "11001011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11001100",
+        "key": "1010000010",
+        "a_ciphertext": "11000011",
+        "b_ciphertext": "11000011",
+        "b_decrypted": "11001100",
+        "a_decrypted": "11001100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11001101",
+        "key": "1010000010",
+        "a_ciphertext": "01101100",
+        "b_ciphertext": "01101100",
+        "b_decrypted": "11001101",
+        "a_decrypted": "11001101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11001110",
+        "key": "1010000010",
+        "a_ciphertext": "11110100",
+        "b_ciphertext": "11110100",
+        "b_decrypted": "11001110",
+        "a_decrypted": "11001110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11001111",
+        "key": "1010000010",
+        "a_ciphertext": "00100001",
+        "b_ciphertext": "00100001",
+        "b_decrypted": "11001111",
+        "a_decrypted": "11001111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11010000",
+        "key": "1010000010",
+        "a_ciphertext": "11000101",
+        "b_ciphertext": "11000101",
+        "b_decrypted": "11010000",
+        "a_decrypted": "11010000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11010001",
+        "key": "1010000010",
+        "a_ciphertext": "00100110",
+        "b_ciphertext": "00100110",
+        "b_decrypted": "11010001",
+        "a_decrypted": "11010001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11010010",
+        "key": "1010000010",
+        "a_ciphertext": "10010100",
+        "b_ciphertext": "10010100",
+        "b_decrypted": "11010010",
+        "a_decrypted": "11010010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11010011",
+        "key": "1010000010",
+        "a_ciphertext": "11101001",
+        "b_ciphertext": "11101001",
+        "b_decrypted": "11010011",
+        "a_decrypted": "11010011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11010100",
+        "key": "1010000010",
+        "a_ciphertext": "10100100",
+        "b_ciphertext": "10100100",
+        "b_decrypted": "11010100",
+        "a_decrypted": "11010100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11010101",
+        "key": "1010000010",
+        "a_ciphertext": "10100111",
+        "b_ciphertext": "10100111",
+        "b_decrypted": "11010101",
+        "a_decrypted": "11010101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11010110",
+        "key": "1010000010",
+        "a_ciphertext": "11010001",
+        "b_ciphertext": "11010001",
+        "b_decrypted": "11010110",
+        "a_decrypted": "11010110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11010111",
+        "key": "1010000010",
+        "a_ciphertext": "10001100",
+        "b_ciphertext": "10001100",
+        "b_decrypted": "11010111",
+        "a_decrypted": "11010111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11011000",
+        "key": "1010000010",
+        "a_ciphertext": "10011100",
+        "b_ciphertext": "10011100",
+        "b_decrypted": "11011000",
+        "a_decrypted": "11011000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11011001",
+        "key": "1010000010",
+        "a_ciphertext": "10011110",
+        "b_ciphertext": "10011110",
+        "b_decrypted": "11011001",
+        "a_decrypted": "11011001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11011010",
+        "key": "1010000010",
+        "a_ciphertext": "10111111",
+        "b_ciphertext": "10111111",
+        "b_decrypted": "11011010",
+        "a_decrypted": "11011010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11011011",
+        "key": "1010000010",
+        "a_ciphertext": "00000111",
+        "b_ciphertext": "00000111",
+        "b_decrypted": "11011011",
+        "a_decrypted": "11011011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11011100",
+        "key": "1010000010",
+        "a_ciphertext": "11011001",
+        "b_ciphertext": "11011001",
+        "b_decrypted": "11011100",
+        "a_decrypted": "11011100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11011101",
+        "key": "1010000010",
+        "a_ciphertext": "00111011",
+        "b_ciphertext": "00111011",
+        "b_decrypted": "11011101",
+        "a_decrypted": "11011101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11011110",
+        "key": "1010000010",
+        "a_ciphertext": "00011010",
+        "b_ciphertext": "00011010",
+        "b_decrypted": "11011110",
+        "a_decrypted": "11011110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11011111",
+        "key": "1010000010",
+        "a_ciphertext": "10000110",
+        "b_ciphertext": "10000110",
+        "b_decrypted": "11011111",
+        "a_decrypted": "11011111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11100000",
+        "key": "1010000010",
+        "a_ciphertext": "01010100",
+        "b_ciphertext": "01010100",
+        "b_decrypted": "11100000",
+        "a_decrypted": "11100000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11100001",
+        "key": "1010000010",
+        "a_ciphertext": "01011011",
+        "b_ciphertext": "01011011",
+        "b_decrypted": "11100001",
+        "a_decrypted": "11100001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11100010",
+        "key": "1010000010",
+        "a_ciphertext": "00110111",
+        "b_ciphertext": "00110111",
+        "b_decrypted": "11100010",
+        "a_decrypted": "11100010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11100011",
+        "key": "1010000010",
+        "a_ciphertext": "11100110",
+        "b_ciphertext": "11100110",
+        "b_decrypted": "11100011",
+        "a_decrypted": "11100011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11100100",
+        "key": "1010000010",
+        "a_ciphertext": "00010001",
+        "b_ciphertext": "00010001",
+        "b_decrypted": "11100100",
+        "a_decrypted": "11100100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11100101",
+        "key": "1010000010",
+        "a_ciphertext": "11111110",
+        "b_ciphertext": "11111110",
+        "b_decrypted": "11100101",
+        "a_decrypted": "11100101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11100110",
+        "key": "1010000010",
+        "a_ciphertext": "10010010",
+        "b_ciphertext": "10010010",
+        "b_decrypted": "11100110",
+        "a_decrypted": "11100110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11100111",
+        "key": "1010000010",
+        "a_ciphertext": "01100111",
+        "b_ciphertext": "01100111",
+        "b_decrypted": "11100111",
+        "a_decrypted": "11100111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11101000",
+        "key": "1010000010",
+        "a_ciphertext": "00101110",
+        "b_ciphertext": "00101110",
+        "b_decrypted": "11101000",
+        "a_decrypted": "11101000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11101001",
+        "key": "1010000010",
+        "a_ciphertext": "10100001",
+        "b_ciphertext": "10100001",
+        "b_decrypted": "11101001",
+        "a_decrypted": "11101001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11101010",
+        "key": "1010000010",
+        "a_ciphertext": "00011001",
+        "b_ciphertext": "00011001",
+        "b_decrypted": "11101010",
+        "a_decrypted": "11101010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11101011",
+        "key": "1010000010",
+        "a_ciphertext": "11101100",
+        "b_ciphertext": "11101100",
+        "b_decrypted": "11101011",
+        "a_decrypted": "11101011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11101100",
+        "key": "1010000010",
+        "a_ciphertext": "10101011",
+        "b_ciphertext": "10101011",
+        "b_decrypted": "11101100",
+        "a_decrypted": "11101100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11101101",
+        "key": "1010000010",
+        "a_ciphertext": "11000000",
+        "b_ciphertext": "11000000",
+        "b_decrypted": "11101101",
+        "a_decrypted": "11101101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11101110",
+        "key": "1010000010",
+        "a_ciphertext": "01011100",
+        "b_ciphertext": "01011100",
+        "b_decrypted": "11101110",
+        "a_decrypted": "11101110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11101111",
+        "key": "1010000010",
+        "a_ciphertext": "10001001",
+        "b_ciphertext": "10001001",
+        "b_decrypted": "11101111",
+        "a_decrypted": "11101111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11110000",
+        "key": "1010000010",
+        "a_ciphertext": "01101101",
+        "b_ciphertext": "01101101",
+        "b_decrypted": "11110000",
+        "a_decrypted": "11110000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11110001",
+        "key": "1010000010",
+        "a_ciphertext": "01001010",
+        "b_ciphertext": "01001010",
+        "b_decrypted": "11110001",
+        "a_decrypted": "11110001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11110010",
+        "key": "1010000010",
+        "a_ciphertext": "00111100",
+        "b_ciphertext": "00111100",
+        "b_decrypted": "11110010",
+        "a_decrypted": "11110010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11110011",
+        "key": "1010000010",
+        "a_ciphertext": "01000001",
+        "b_ciphertext": "01000001",
+        "b_decrypted": "11110011",
+        "a_decrypted": "11110011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11110100",
+        "key": "1010000010",
+        "a_ciphertext": "00001000",
+        "b_ciphertext": "00001000",
+        "b_decrypted": "11110100",
+        "a_decrypted": "11110100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11110101",
+        "key": "1010000010",
+        "a_ciphertext": "11001111",
+        "b_ciphertext": "11001111",
+        "b_decrypted": "11110101",
+        "a_decrypted": "11110101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11110110",
+        "key": "1010000010",
+        "a_ciphertext": "01111001",
+        "b_ciphertext": "01111001",
+        "b_decrypted": "11110110",
+        "a_decrypted": "11110110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11110111",
+        "key": "1010000010",
+        "a_ciphertext": "00100000",
+        "b_ciphertext": "00100000",
+        "b_decrypted": "11110111",
+        "a_decrypted": "11110111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11111000",
+        "key": "1010000010",
+        "a_ciphertext": "00110100",
+        "b_ciphertext": "00110100",
+        "b_decrypted": "11111000",
+        "a_decrypted": "11111000",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11111001",
+        "key": "1010000010",
+        "a_ciphertext": "01110110",
+        "b_ciphertext": "01110110",
+        "b_decrypted": "11111001",
+        "a_decrypted": "11111001",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11111010",
+        "key": "1010000010",
+        "a_ciphertext": "01010111",
+        "b_ciphertext": "01010111",
+        "b_decrypted": "11111010",
+        "a_decrypted": "11111010",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11111011",
+        "key": "1010000010",
+        "a_ciphertext": "01101111",
+        "b_ciphertext": "01101111",
+        "b_decrypted": "11111011",
+        "a_decrypted": "11111011",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11111100",
+        "key": "1010000010",
+        "a_ciphertext": "01110001",
+        "b_ciphertext": "01110001",
+        "b_decrypted": "11111100",
+        "a_decrypted": "11111100",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11111101",
+        "key": "1010000010",
+        "a_ciphertext": "11010011",
+        "b_ciphertext": "11010011",
+        "b_decrypted": "11111101",
+        "a_decrypted": "11111101",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11111110",
+        "key": "1010000010",
+        "a_ciphertext": "11110010",
+        "b_ciphertext": "11110010",
+        "b_decrypted": "11111110",
+        "a_decrypted": "11111110",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      },
+      {
+        "plaintext": "11111111",
+        "key": "1010000010",
+        "a_ciphertext": "11101010",
+        "b_ciphertext": "11101010",
+        "b_decrypted": "11111111",
+        "a_decrypted": "11111111",
+        "encrypt_equal": true,
+        "a_to_b_ok": true,
+        "b_to_a_ok": true
+      }
+    ],
+    "counts": {
+      "encrypt_equal": 256,
+      "a_to_b_ok": 256,
+      "b_to_a_ok": 256
+    },
+    "demo": {
+      "plaintext": "00000000",
+      "key": "1010000010",
+      "ciphertext": "00001110",
+      "a_to_b": [
+        {
+          "title": "A 端加密",
+          "actor": "A",
+          "operation": "encrypt",
+          "input": "00000000",
+          "output": "00001110",
+          "description": "A 端用共享的 10 位演示密钥加密 8 位明文。"
+        },
+        {
+          "title": "模拟信道 · A → B",
+          "actor": "channel",
+          "operation": "transfer",
+          "input": "00001110",
+          "output": "00001110",
+          "description": "本地模拟传递密文，未发送到网络或其他同学。"
+        },
+        {
+          "title": "B 端解密",
+          "actor": "B",
+          "operation": "decrypt",
+          "input": "00001110",
+          "output": "00000000",
+          "description": "B 端使用自己的实现解密，核对结果是否等于原明文。"
+        }
+      ],
+      "b_to_a": [
+        {
+          "title": "B 端加密",
+          "actor": "B",
+          "operation": "encrypt",
+          "input": "00000000",
+          "output": "00001110",
+          "description": "B 端用共享的 10 位演示密钥加密 8 位明文。"
+        },
+        {
+          "title": "模拟信道 · B → A",
+          "actor": "channel",
+          "operation": "transfer",
+          "input": "00001110",
+          "output": "00001110",
+          "description": "本地模拟传递密文，未发送到网络或其他同学。"
+        },
+        {
+          "title": "A 端解密",
+          "actor": "A",
+          "operation": "decrypt",
+          "input": "00001110",
+          "output": "00000000",
+          "description": "A 端使用自己的实现解密，核对结果是否等于原明文。"
+        }
+      ]
+    }
+  },
+  "encryption_trace": {
+    "mode": "encrypt",
+    "input": "11010111",
+    "key": "1010000010",
+    "result": "10001100",
+    "k1": "10100100",
+    "k2": "01000011",
+    "spec_id": "course-sdes-v1-ls1-ls2-sbox2-3012",
+    "steps": [
+      {
+        "id": "p10",
+        "title": "P10 · 密钥初始置换",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "输出第 i 位取输入的 P10[i] 位；位置从左往右、从 1 开始。",
+        "input": "1010000010",
+        "output": "1000001100",
+        "mapping": [
+          3,
+          5,
+          2,
+          7,
+          4,
+          10,
+          1,
+          9,
+          8,
+          6
+        ],
+        "box_label": "P10"
+      },
+      {
+        "id": "ls1",
+        "title": "LS-1 · 两半分别循环左移 1 位",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "按 5 + 5 位分开，各自循环左移 1 位。",
+        "input": "1000001100",
+        "output": "0000111000",
+        "mapping": [
+          2,
+          3,
+          4,
+          5,
+          1,
+          7,
+          8,
+          9,
+          10,
+          6
+        ],
+        "box_label": "LS-1",
+        "half_width": 5
+      },
+      {
+        "id": "p8-k1",
+        "title": "P8 · 生成 K1",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "从 LS-1 的 10 位结果中选择 8 位，得到第一子密钥 K1。",
+        "input": "0000111000",
+        "output": "10100100",
+        "mapping": [
+          6,
+          3,
+          7,
+          4,
+          8,
+          5,
+          10,
+          9
+        ],
+        "box_label": "P8"
+      },
+      {
+        "id": "ls2",
+        "title": "LS-2 · 在 LS-1 结果上继续左移 2 位",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "两半各自再循环左移 2 位；相对 P10 的结果累计左移 3 位。",
+        "input": "0000111000",
+        "output": "0010000011",
+        "mapping": [
+          3,
+          4,
+          5,
+          1,
+          2,
+          8,
+          9,
+          10,
+          6,
+          7
+        ],
+        "box_label": "LS-2",
+        "half_width": 5
+      },
+      {
+        "id": "p8-k2",
+        "title": "P8 · 生成 K2",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "从继续 LS-2 的 10 位结果中选择 8 位，得到第二子密钥 K2。",
+        "input": "0010000011",
+        "output": "01000011",
+        "mapping": [
+          6,
+          3,
+          7,
+          4,
+          8,
+          5,
+          10,
+          9
+        ],
+        "box_label": "P8"
+      },
+      {
+        "id": "ip",
+        "title": "IP · 分组初始置换",
+        "phase": "round1",
+        "kind": "permutation",
+        "description": "8 位输入经过 IP 后分为左半 L 和右半 R，各 4 位。",
+        "input": "11010111",
+        "output": "11011101",
+        "mapping": [
+          2,
+          6,
+          3,
+          1,
+          4,
+          8,
+          5,
+          7
+        ],
+        "box_label": "IP"
+      },
+      {
+        "id": "r1-overview",
+        "title": "第 1 轮 · fₖ 使用 K1",
+        "phase": "round1",
+        "kind": "round",
+        "description": "F(R, K) = P4(S1 ‖ S2)，fₖ(L ‖ R) = (L ⊕ F) ‖ R；本步骤展示全景，随后逐项计算。",
+        "input": "11011101",
+        "output": "00101101",
+        "left": "1101",
+        "right": "1101",
+        "ep": "11101011",
+        "mixed": "01001111",
+        "sbox_output": "1111",
+        "p4": "1111",
+        "subkey": "10100100",
+        "subkey_name": "K1"
+      },
+      {
+        "id": "r1-ep",
+        "title": "第 1 轮 · EP 扩展置换",
+        "phase": "round1",
+        "kind": "permutation",
+        "description": "仅取右半 R，将 4 位按 EP 复制 / 排列成 8 位；左半 L 暂存。",
+        "input": "1101",
+        "output": "11101011",
+        "mapping": [
+          4,
+          1,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1
+        ],
+        "box_label": "EP"
+      },
+      {
+        "id": "r1-xor-key",
+        "title": "第 1 轮 · 与 K1 异或",
+        "phase": "round1",
+        "kind": "xor",
+        "description": "逐位异或：相同得 0，不同得 1。",
+        "left": "11101011",
+        "right": "10100100",
+        "output": "01001111",
+        "left_label": "EP(R)",
+        "right_label": "K1"
+      },
+      {
+        "id": "r1-sboxes",
+        "title": "第 1 轮 · S-box 查表",
+        "phase": "round1",
+        "kind": "sboxes",
+        "description": "每 4 位的首尾两位选择行，中间两位选择列；行列均从 00 计数。S-box2 按作业图片修订版。",
+        "input": "01001111",
+        "output": "1111",
+        "boxes": [
+          {
+            "name": "S-box1",
+            "input": "0100",
+            "output": "11",
+            "row": 0,
+            "column": 2,
+            "table": [
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "S-box2",
+            "input": "1111",
+            "output": "11",
+            "row": 3,
+            "column": 3,
+            "table": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                1,
+                0
+              ],
+              [
+                3,
+                0,
+                1,
+                2
+              ],
+              [
+                2,
+                1,
+                0,
+                3
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "r1-p4",
+        "title": "第 1 轮 · P4 / SPBox",
+        "phase": "round1",
+        "kind": "permutation",
+        "description": "先拼接两个 S-box 的各 2 位输出，再按 (2, 4, 3, 1) 置换。",
+        "input": "1111",
+        "output": "1111",
+        "mapping": [
+          2,
+          4,
+          3,
+          1
+        ],
+        "box_label": "P4"
+      },
+      {
+        "id": "r1-xor-left",
+        "title": "第 1 轮 · 左半异或与拼接",
+        "phase": "round1",
+        "kind": "xor",
+        "description": "L 与 F(R, K1) 异或，右半 R 原样保留。拼接后为 00101101。",
+        "left": "1101",
+        "right": "1111",
+        "output": "0010",
+        "left_label": "L",
+        "right_label": "F(R, K1)",
+        "retained_right": "1101",
+        "block_output": "00101101"
+      },
+      {
+        "id": "sw",
+        "title": "SW · 交换左右两半",
+        "phase": "round1",
+        "kind": "permutation",
+        "description": "仅在两轮之间交换一次：左 4 位与右 4 位互换。",
+        "input": "00101101",
+        "output": "11010010",
+        "mapping": [
+          5,
+          6,
+          7,
+          8,
+          1,
+          2,
+          3,
+          4
+        ],
+        "box_label": "SW",
+        "half_width": 4
+      },
+      {
+        "id": "r2-overview",
+        "title": "第 2 轮 · fₖ 使用 K2",
+        "phase": "round2",
+        "kind": "round",
+        "description": "F(R, K) = P4(S1 ‖ S2)，fₖ(L ‖ R) = (L ⊕ F) ‖ R；本步骤展示全景，随后逐项计算。",
+        "input": "11010010",
+        "output": "01010010",
+        "left": "1101",
+        "right": "0010",
+        "ep": "00010100",
+        "mixed": "01010111",
+        "sbox_output": "0100",
+        "p4": "1000",
+        "subkey": "01000011",
+        "subkey_name": "K2"
+      },
+      {
+        "id": "r2-ep",
+        "title": "第 2 轮 · EP 扩展置换",
+        "phase": "round2",
+        "kind": "permutation",
+        "description": "仅取右半 R，将 4 位按 EP 复制 / 排列成 8 位；左半 L 暂存。",
+        "input": "0010",
+        "output": "00010100",
+        "mapping": [
+          4,
+          1,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1
+        ],
+        "box_label": "EP"
+      },
+      {
+        "id": "r2-xor-key",
+        "title": "第 2 轮 · 与 K2 异或",
+        "phase": "round2",
+        "kind": "xor",
+        "description": "逐位异或：相同得 0，不同得 1。",
+        "left": "00010100",
+        "right": "01000011",
+        "output": "01010111",
+        "left_label": "EP(R)",
+        "right_label": "K2"
+      },
+      {
+        "id": "r2-sboxes",
+        "title": "第 2 轮 · S-box 查表",
+        "phase": "round2",
+        "kind": "sboxes",
+        "description": "每 4 位的首尾两位选择行，中间两位选择列；行列均从 00 计数。S-box2 按作业图片修订版。",
+        "input": "01010111",
+        "output": "0100",
+        "boxes": [
+          {
+            "name": "S-box1",
+            "input": "0101",
+            "output": "01",
+            "row": 1,
+            "column": 2,
+            "table": [
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "S-box2",
+            "input": "0111",
+            "output": "00",
+            "row": 1,
+            "column": 3,
+            "table": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                1,
+                0
+              ],
+              [
+                3,
+                0,
+                1,
+                2
+              ],
+              [
+                2,
+                1,
+                0,
+                3
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "r2-p4",
+        "title": "第 2 轮 · P4 / SPBox",
+        "phase": "round2",
+        "kind": "permutation",
+        "description": "先拼接两个 S-box 的各 2 位输出，再按 (2, 4, 3, 1) 置换。",
+        "input": "0100",
+        "output": "1000",
+        "mapping": [
+          2,
+          4,
+          3,
+          1
+        ],
+        "box_label": "P4"
+      },
+      {
+        "id": "r2-xor-left",
+        "title": "第 2 轮 · 左半异或与拼接",
+        "phase": "round2",
+        "kind": "xor",
+        "description": "L 与 F(R, K2) 异或，右半 R 原样保留。拼接后为 01010010。",
+        "left": "1101",
+        "right": "1000",
+        "output": "0101",
+        "left_label": "L",
+        "right_label": "F(R, K2)",
+        "retained_right": "0010",
+        "block_output": "01010010"
+      },
+      {
+        "id": "ip-inverse",
+        "title": "IP⁻¹ · 最终逆置换",
+        "phase": "output",
+        "kind": "permutation",
+        "description": "第二轮结束后不交换，直接做 IP 的逆置换，得到最终 8 位结果。",
+        "input": "01010010",
+        "output": "10001100",
+        "mapping": [
+          4,
+          1,
+          3,
+          5,
+          7,
+          2,
+          8,
+          6
+        ],
+        "box_label": "IP⁻¹"
+      }
+    ]
+  },
+  "decryption_trace": {
+    "mode": "decrypt",
+    "input": "10001100",
+    "key": "1010000010",
+    "result": "11010111",
+    "k1": "10100100",
+    "k2": "01000011",
+    "spec_id": "course-sdes-v1-ls1-ls2-sbox2-3012",
+    "steps": [
+      {
+        "id": "p10",
+        "title": "P10 · 密钥初始置换",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "输出第 i 位取输入的 P10[i] 位；位置从左往右、从 1 开始。",
+        "input": "1010000010",
+        "output": "1000001100",
+        "mapping": [
+          3,
+          5,
+          2,
+          7,
+          4,
+          10,
+          1,
+          9,
+          8,
+          6
+        ],
+        "box_label": "P10"
+      },
+      {
+        "id": "ls1",
+        "title": "LS-1 · 两半分别循环左移 1 位",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "按 5 + 5 位分开，各自循环左移 1 位。",
+        "input": "1000001100",
+        "output": "0000111000",
+        "mapping": [
+          2,
+          3,
+          4,
+          5,
+          1,
+          7,
+          8,
+          9,
+          10,
+          6
+        ],
+        "box_label": "LS-1",
+        "half_width": 5
+      },
+      {
+        "id": "p8-k1",
+        "title": "P8 · 生成 K1",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "从 LS-1 的 10 位结果中选择 8 位，得到第一子密钥 K1。",
+        "input": "0000111000",
+        "output": "10100100",
+        "mapping": [
+          6,
+          3,
+          7,
+          4,
+          8,
+          5,
+          10,
+          9
+        ],
+        "box_label": "P8"
+      },
+      {
+        "id": "ls2",
+        "title": "LS-2 · 在 LS-1 结果上继续左移 2 位",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "两半各自再循环左移 2 位；相对 P10 的结果累计左移 3 位。",
+        "input": "0000111000",
+        "output": "0010000011",
+        "mapping": [
+          3,
+          4,
+          5,
+          1,
+          2,
+          8,
+          9,
+          10,
+          6,
+          7
+        ],
+        "box_label": "LS-2",
+        "half_width": 5
+      },
+      {
+        "id": "p8-k2",
+        "title": "P8 · 生成 K2",
+        "phase": "key",
+        "kind": "permutation",
+        "description": "从继续 LS-2 的 10 位结果中选择 8 位，得到第二子密钥 K2。",
+        "input": "0010000011",
+        "output": "01000011",
+        "mapping": [
+          6,
+          3,
+          7,
+          4,
+          8,
+          5,
+          10,
+          9
+        ],
+        "box_label": "P8"
+      },
+      {
+        "id": "ip",
+        "title": "IP · 分组初始置换",
+        "phase": "round1",
+        "kind": "permutation",
+        "description": "8 位输入经过 IP 后分为左半 L 和右半 R，各 4 位。",
+        "input": "10001100",
+        "output": "01010010",
+        "mapping": [
+          2,
+          6,
+          3,
+          1,
+          4,
+          8,
+          5,
+          7
+        ],
+        "box_label": "IP"
+      },
+      {
+        "id": "r1-overview",
+        "title": "第 1 轮 · fₖ 使用 K2",
+        "phase": "round1",
+        "kind": "round",
+        "description": "F(R, K) = P4(S1 ‖ S2)，fₖ(L ‖ R) = (L ⊕ F) ‖ R；本步骤展示全景，随后逐项计算。",
+        "input": "01010010",
+        "output": "11010010",
+        "left": "0101",
+        "right": "0010",
+        "ep": "00010100",
+        "mixed": "01010111",
+        "sbox_output": "0100",
+        "p4": "1000",
+        "subkey": "01000011",
+        "subkey_name": "K2"
+      },
+      {
+        "id": "r1-ep",
+        "title": "第 1 轮 · EP 扩展置换",
+        "phase": "round1",
+        "kind": "permutation",
+        "description": "仅取右半 R，将 4 位按 EP 复制 / 排列成 8 位；左半 L 暂存。",
+        "input": "0010",
+        "output": "00010100",
+        "mapping": [
+          4,
+          1,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1
+        ],
+        "box_label": "EP"
+      },
+      {
+        "id": "r1-xor-key",
+        "title": "第 1 轮 · 与 K2 异或",
+        "phase": "round1",
+        "kind": "xor",
+        "description": "逐位异或：相同得 0，不同得 1。",
+        "left": "00010100",
+        "right": "01000011",
+        "output": "01010111",
+        "left_label": "EP(R)",
+        "right_label": "K2"
+      },
+      {
+        "id": "r1-sboxes",
+        "title": "第 1 轮 · S-box 查表",
+        "phase": "round1",
+        "kind": "sboxes",
+        "description": "每 4 位的首尾两位选择行，中间两位选择列；行列均从 00 计数。S-box2 按作业图片修订版。",
+        "input": "01010111",
+        "output": "0100",
+        "boxes": [
+          {
+            "name": "S-box1",
+            "input": "0101",
+            "output": "01",
+            "row": 1,
+            "column": 2,
+            "table": [
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "S-box2",
+            "input": "0111",
+            "output": "00",
+            "row": 1,
+            "column": 3,
+            "table": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                1,
+                0
+              ],
+              [
+                3,
+                0,
+                1,
+                2
+              ],
+              [
+                2,
+                1,
+                0,
+                3
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "r1-p4",
+        "title": "第 1 轮 · P4 / SPBox",
+        "phase": "round1",
+        "kind": "permutation",
+        "description": "先拼接两个 S-box 的各 2 位输出，再按 (2, 4, 3, 1) 置换。",
+        "input": "0100",
+        "output": "1000",
+        "mapping": [
+          2,
+          4,
+          3,
+          1
+        ],
+        "box_label": "P4"
+      },
+      {
+        "id": "r1-xor-left",
+        "title": "第 1 轮 · 左半异或与拼接",
+        "phase": "round1",
+        "kind": "xor",
+        "description": "L 与 F(R, K2) 异或，右半 R 原样保留。拼接后为 11010010。",
+        "left": "0101",
+        "right": "1000",
+        "output": "1101",
+        "left_label": "L",
+        "right_label": "F(R, K2)",
+        "retained_right": "0010",
+        "block_output": "11010010"
+      },
+      {
+        "id": "sw",
+        "title": "SW · 交换左右两半",
+        "phase": "round1",
+        "kind": "permutation",
+        "description": "仅在两轮之间交换一次：左 4 位与右 4 位互换。",
+        "input": "11010010",
+        "output": "00101101",
+        "mapping": [
+          5,
+          6,
+          7,
+          8,
+          1,
+          2,
+          3,
+          4
+        ],
+        "box_label": "SW",
+        "half_width": 4
+      },
+      {
+        "id": "r2-overview",
+        "title": "第 2 轮 · fₖ 使用 K1",
+        "phase": "round2",
+        "kind": "round",
+        "description": "F(R, K) = P4(S1 ‖ S2)，fₖ(L ‖ R) = (L ⊕ F) ‖ R；本步骤展示全景，随后逐项计算。",
+        "input": "00101101",
+        "output": "11011101",
+        "left": "0010",
+        "right": "1101",
+        "ep": "11101011",
+        "mixed": "01001111",
+        "sbox_output": "1111",
+        "p4": "1111",
+        "subkey": "10100100",
+        "subkey_name": "K1"
+      },
+      {
+        "id": "r2-ep",
+        "title": "第 2 轮 · EP 扩展置换",
+        "phase": "round2",
+        "kind": "permutation",
+        "description": "仅取右半 R，将 4 位按 EP 复制 / 排列成 8 位；左半 L 暂存。",
+        "input": "1101",
+        "output": "11101011",
+        "mapping": [
+          4,
+          1,
+          2,
+          3,
+          2,
+          3,
+          4,
+          1
+        ],
+        "box_label": "EP"
+      },
+      {
+        "id": "r2-xor-key",
+        "title": "第 2 轮 · 与 K1 异或",
+        "phase": "round2",
+        "kind": "xor",
+        "description": "逐位异或：相同得 0，不同得 1。",
+        "left": "11101011",
+        "right": "10100100",
+        "output": "01001111",
+        "left_label": "EP(R)",
+        "right_label": "K1"
+      },
+      {
+        "id": "r2-sboxes",
+        "title": "第 2 轮 · S-box 查表",
+        "phase": "round2",
+        "kind": "sboxes",
+        "description": "每 4 位的首尾两位选择行，中间两位选择列；行列均从 00 计数。S-box2 按作业图片修订版。",
+        "input": "01001111",
+        "output": "1111",
+        "boxes": [
+          {
+            "name": "S-box1",
+            "input": "0100",
+            "output": "11",
+            "row": 0,
+            "column": 2,
+            "table": [
+              [
+                1,
+                0,
+                3,
+                2
+              ],
+              [
+                3,
+                2,
+                1,
+                0
+              ],
+              [
+                0,
+                2,
+                1,
+                3
+              ],
+              [
+                3,
+                1,
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "name": "S-box2",
+            "input": "1111",
+            "output": "11",
+            "row": 3,
+            "column": 3,
+            "table": [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                1,
+                0
+              ],
+              [
+                3,
+                0,
+                1,
+                2
+              ],
+              [
+                2,
+                1,
+                0,
+                3
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "r2-p4",
+        "title": "第 2 轮 · P4 / SPBox",
+        "phase": "round2",
+        "kind": "permutation",
+        "description": "先拼接两个 S-box 的各 2 位输出，再按 (2, 4, 3, 1) 置换。",
+        "input": "1111",
+        "output": "1111",
+        "mapping": [
+          2,
+          4,
+          3,
+          1
+        ],
+        "box_label": "P4"
+      },
+      {
+        "id": "r2-xor-left",
+        "title": "第 2 轮 · 左半异或与拼接",
+        "phase": "round2",
+        "kind": "xor",
+        "description": "L 与 F(R, K1) 异或，右半 R 原样保留。拼接后为 11011101。",
+        "left": "0010",
+        "right": "1111",
+        "output": "1101",
+        "left_label": "L",
+        "right_label": "F(R, K1)",
+        "retained_right": "1101",
+        "block_output": "11011101"
+      },
+      {
+        "id": "ip-inverse",
+        "title": "IP⁻¹ · 最终逆置换",
+        "phase": "output",
+        "kind": "permutation",
+        "description": "第二轮结束后不交换，直接做 IP 的逆置换，得到最终 8 位结果。",
+        "input": "11011101",
+        "output": "11010111",
+        "mapping": [
+          4,
+          1,
+          3,
+          5,
+          7,
+          2,
+          8,
+          6
+        ],
+        "box_label": "IP⁻¹"
+      }
+    ]
+  }
+}

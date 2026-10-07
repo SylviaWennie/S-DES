@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "browser": "Chromium headless",
+  "browser_version": "153.0.8010.12",
+  "viewports": [
+    [
+      1440,
+      1100
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "checks": [
+    "basic encrypt, trace, refill, decrypt",
+    "invalid binary input rejected by browser constraint",
+    "exchange download, file import, roundtrip and tamper detection (self-test only)",
+    "ASCII encryption, refill/decryption, non-ASCII rejection and empty input",
+    "brute force all/single/contradictory pairs, measured chart and convergence",
+    "collision analysis result and witness rendered",
+    "390px viewport without page overflow; keyboard tab navigation",
+    "no browser JavaScript errors; no external requests"
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "note": "Local self-test, not a real cross-group test. Screenshots contain page content only."
+}

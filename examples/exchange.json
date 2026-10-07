@@ -1,0 +1,37 @@
+{
+  "schema": "sdes-cross-test-v1",
+  "spec_id": "course-sdes-v1-ls1-ls2-sbox2-3012",
+  "purpose": "public educational test vectors; keys intentionally included",
+  "vectors": [
+    {
+      "key": "1010000010",
+      "plaintext": "00000000",
+      "ciphertext": "00001110"
+    },
+    {
+      "key": "1010000010",
+      "plaintext": "00000001",
+      "ciphertext": "10000001"
+    },
+    {
+      "key": "1010000010",
+      "plaintext": "00001000",
+      "ciphertext": "01110100"
+    },
+    {
+      "key": "1010000010",
+      "plaintext": "01111111",
+      "ciphertext": "10101100"
+    },
+    {
+      "key": "1010000010",
+      "plaintext": "11010111",
+      "ciphertext": "10001100"
+    },
+    {
+      "key": "1010000010",
+      "plaintext": "11111111",
+      "ciphertext": "11101010"
+    }
+  ]
+}

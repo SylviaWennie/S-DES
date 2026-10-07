@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S-DES · 信息安全实验台</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/visuals.css">
+  <script src="/visuals.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-icon">S</span> S-DES <span class="brand-caption">信息安全实验台</span></a><span class="local-badge"><i></i> 本地运行 · 数据不上传</span></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">INTRODUCTION TO INFORMATION SECURITY</p><h1>从一组比特，理解加密。</h1><p class="intro">实现、验证与分析简化 DES。沿着五道关卡，观察每一步数据变化。</p></div><div class="spec-card"><span>课程参数</span><strong>8 <small>bit 分组</small><b>/</b> 10 <small>bit 密钥</small></strong><p>两轮 Feistel · 1,024 个可能密钥</p></div></section>
+    <nav class="tabs" role="tablist" aria-label="实验关卡">
+      <button role="tab" id="tab-basic" aria-controls="panel-basic" aria-selected="true" data-tab="basic"><span>01</span> 基本测试</button>
+      <button role="tab" id="tab-cross" aria-controls="panel-cross" aria-selected="false" data-tab="cross"><span>02</span> 交叉测试</button>
+      <button role="tab" id="tab-ascii" aria-controls="panel-ascii" aria-selected="false" data-tab="ascii"><span>03</span> ASCII 扩展</button>
+      <button role="tab" id="tab-brute" aria-controls="panel-brute" aria-selected="false" data-tab="brute"><span>04</span> 暴力破解</button>
+      <button role="tab" id="tab-collision" aria-controls="panel-collision" aria-selected="false" data-tab="collision"><span>05</span> 封闭测试</button>
+    </nav>
+    <div id="notice" class="notice" role="alert" hidden></div>
+    <section id="panel-basic" class="panel" role="tabpanel" aria-labelledby="tab-basic">
+      <div class="panel-heading"><div><p class="eyebrow">EXPERIMENT 01</p><h2>看见一次完整的加密</h2><p>输入一个 8 位分组，展开密钥与两轮运算。解密时使用相反的子密钥顺序。</p></div><span class="tag">逐步可解释</span></div>
+      <div class="two-col"><form id="basic-form" class="card"><h3>输入工作区</h3><label for="operation">运算方向</label><select id="operation"><option value="encrypt">加密 · 明文 → 密文</option><option value="decrypt">解密 · 密文 → 明文</option></select><label for="block">8 位数据</label><input id="block" class="mono" value="11010111" maxlength="8" pattern="[01]{8}" required autocomplete="off"><label for="key">10 位密钥</label><input id="key" class="mono" value="1010000010" maxlength="10" pattern="[01]{10}" required autocomplete="off"><p class="hint">仅接受 0 和 1，前导零不可省略。</p><div class="actions"><button class="primary" type="submit">运行并查看过程 <span>→</span></button><button type="button" id="use-result">结果回填</button></div></form>
+        <div class="card result-card"><div class="result-title"><h3>运算结果</h3><span id="result-direction" class="tag">等待运行</span></div><output id="block-result" class="big-bits">--------</output><div class="key-pair"><div><span>子密钥 K₁</span><code id="k1">--------</code></div><div><span>子密钥 K₂</span><code id="k2">--------</code></div></div><p class="hint">课程修订版 S-box2 · 密钥扩展先 LS-1，再继续 LS-2。</p><div id="key-trace" class="trace-line">运行后显示密钥扩展轨迹。</div></div></div>
+      <div class="card visual-card">
+        <div class="result-title"><h3>课程图解 · 跟着比特走一遍</h3><span class="tag">真实数据 · SVG 动画</span></div>
+        <p class="visual-intro">密钥扩展 → IP → 第 1 轮 → SW → 第 2 轮 → IP⁻¹。橙色为密钥置换，绿色为数据通道；S 盒按首尾选行、中间选列。</p>
+        <div id="cipher-visual"><div class="empty-state">点击“运行并查看过程”，展开置换盒连线与轮函数动画。</div></div>
+      </div>
+      <details class="supplement-details"><summary>展开两轮数值记录</summary><div class="card trace-card"><div class="result-title"><h3>两轮运算轨迹</h3><span class="hint">IP → fₖ → SW → fₖ → IP⁻¹</span></div><div id="round-trace" class="empty-state">每一轮的扩展、异或与 S 盒输出将在这里展开。</div></div></details>
+    </section>
+    <section id="panel-cross" class="panel" role="tabpanel" aria-labelledby="tab-cross" hidden>
+      <div class="panel-heading"><div><p class="eyebrow">EXPERIMENT 02</p><h2>一个人，也能演示 A / B 双端互测</h2><p>同一个密钥、两份独立实现：比较加密结果，再双向传递密文、解密还原。</p></div><span class="tag">个人模拟实验</span></div>
+      <div class="simulation-notice">个人在本机模拟 A、B 两端。A 使用整数位运算，B 使用独立字符串实现；此处记录的是实际程序互测，没有外部同学或跨机器通信。</div>
+      <div class="two-col">
+        <form id="simulation-form" class="card">
+          <h3>共享密钥与公开测试数据</h3>
+          <label for="simulation-key">双方约定的 10 位密钥</label>
+          <input id="simulation-key" class="mono" value="1010000010" pattern="[01]{10}" required>
+          <label for="simulation-plaintexts">8 位明文（每行一条，最多 256 条）</label>
+          <textarea id="simulation-plaintexts" class="mono" rows="5" required>11010111
+00000000
+00000001
+00001000
+11111111</textarea>
+          <div class="actions"><button type="submit" class="primary">运行 A/B 模拟 →</button><button type="button" id="simulation-all">载入 256 个明文</button></div>
+        </form>
+        <div class="card">
+          <h3>三项互测 · 逐条实际核验</h3>
+          <div id="simulation-summary" class="simulation-summary" aria-live="polite"><div><strong>—</strong><span>A、B 加密一致</span></div><div><strong>—</strong><span>A → B 解密还原</span></div><div><strong>—</strong><span>B → A 解密还原</span></div></div>
+          <p id="simulation-result" class="hint">运行后显示通过数量。两个端点分别计算，不把同一份结果复制成另一端输出。</p>
+          <div class="table-wrap"><table id="simulation-table" class="simulation-table"><thead><tr><th>明文 P</th><th>A 密文</th><th>B 密文</th><th>A→B / B→A</th><th>动画</th></tr></thead><tbody></tbody></table></div>
+          <button id="simulation-download" type="button" disabled>下载个人模拟记录 ↓</button>
+        </div>
+      </div>
+      <div class="card visual-card">
+        <div class="result-title"><h3>加密 → 传递 → 解密</h3><span class="tag">可切换方向与样本</span></div>
+        <label for="simulation-direction">双向演示</label>
+        <select id="simulation-direction" class="simulation-direction"><option value="a_to_b">A 加密 → B 解密</option><option value="b_to_a">B 加密 → A 解密</option></select>
+        <div id="simulation-visual"><div class="empty-state">运行个人模拟后，点击播放观察密文在两个端点之间传递。</div></div>
+      </div>
+      <details class="supplement-details" open><summary>文件交换与手动核验</summary>
+      <div class="two-col"><form id="export-form" class="card"><h3>生成交换文件</h3><label for="exchange-key">约定的 10 位演示密钥</label><input id="exchange-key" class="mono" value="1010000010" pattern="[01]{10}" required><label for="exchange-plaintexts">8 位明文（每行一条）</label><textarea id="exchange-plaintexts" class="mono" rows="5" required>00000000
+00000001
+11010111
+11111111</textarea><p class="hint">文件显式包含密钥，只用于课程演示。不要填写真实秘密或个人信息。</p><button class="primary" type="submit">下载 JSON 交换文件 ↓</button></form>
+      <form id="verify-form" class="card"><h3>核验导入结果</h3><label for="exchange-file">选择 JSON 文件</label><input id="exchange-file" type="file" accept=".json,application/json"><label for="exchange-json">或直接粘贴交换文件</label><textarea id="exchange-json" class="mono" rows="7" placeholder='{"schema":"sdes-cross-test-v1", ...}'></textarea><button class="primary" type="submit">核验加密与解密 →</button><div id="verify-result" class="readout" aria-live="polite">保留 JSON 交换接口，可复核公开样例、独立实现导出文件或后续同学提供的结果。</div></form></div>
+      </details>
+    </section>
+    <section id="panel-ascii" class="panel" role="tabpanel" aria-labelledby="tab-ascii" hidden>
+      <div class="panel-heading"><div><p class="eyebrow">EXPERIMENT 03</p><h2>让一段文字经过加密</h2><p>ASCII 每个字符按一个字节独立处理。密文用十六进制和二进制展示，避免乱码丢失。</p></div><span class="tag">逐字节 · 无填充</span></div>
+      <div class="two-col"><form id="ascii-form" class="card"><h3>文本工作区</h3><label for="ascii-operation">运算方向</label><select id="ascii-operation"><option value="encrypt">加密 ASCII 文本</option><option value="decrypt">解密十六进制密文</option></select><label for="ascii-key">10 位密钥</label><input id="ascii-key" class="mono" value="1010000010" pattern="[01]{10}" required><label for="ascii-text">ASCII 明文 / 十六进制密文</label><textarea id="ascii-text" rows="5" maxlength="8192">This is a test</textarea><div class="actions"><button type="submit" class="primary">运行文本转换 →</button><button type="button" id="ascii-refill">密文回填解密</button></div></form><div class="card"><h3>字节转换结果</h3><div id="ascii-result" class="readout" aria-live="polite">等待输入。支持空串、空格与换行，严格限制 ASCII 范围。</div></div></div>
+      <div class="card visual-card">
+        <div class="result-title"><h3>ASCII ?????</h3><span class="tag">?? ? 8 ??? ? ?? ? ??</span></div>
+        <p id="ascii-visual-note" class="visual-intro">??????????????????????????????????</p>
+        <div id="ascii-visual"><div class="empty-state">???????</div></div>
+        <button id="ascii-inspect-byte" type="button" disabled>??????????? ?</button>
+      </div>
+    </section>
+    <section id="panel-brute" class="panel" role="tabpanel" aria-labelledby="tab-brute" hidden>
+      <div class="panel-heading"><div><p class="eyebrow">EXPERIMENT 04</p><h2>1024 把钥匙，哪些能打开？</h2><p>枚举完整密钥空间，保留全部符合条件的密钥。增加明密文对，观察候选如何收敛。</p></div><span class="tag">小扩展 · 候选收敛</span></div>
+      <div class="two-col"><form id="brute-form" class="card"><h3>已知明密文</h3><label for="pairs">每行：8 位明文 空格 8 位密文</label><textarea id="pairs" class="mono" rows="7" required></textarea><p class="hint">所有明密文对必须使用同一个密钥。无匹配也会返回真实结果。</p><div class="actions"><button class="primary" type="submit">穷举全部密钥 →</button><button type="button" id="brute-example">载入三对示例</button></div></form><div class="card"><h3>搜索结果</h3><div id="brute-summary" class="stats"><div><strong>—</strong><span>候选密钥</span></div><div><strong>—</strong><span>实测耗时 / ms</span></div><div><strong>—</strong><span>已枚举</span></div></div><div id="brute-keys" class="readout mono">等待搜索。</div><div id="convergence" class="hint"></div></div></div>
+      <div class="card trace-card"><div class="result-title"><h3>穷举耗时 · 实测累计曲线</h3><button id="replay-chart" type="button">回放曲线</button></div><p class="hint">每 32 个密钥采样一次，覆盖 0–1024。动画为 1.2 秒可视化回放；纵轴和上方耗时来自实际计算，不含网络与动画时间。</p><canvas id="timing-chart" width="1100" height="240" role="img" aria-label="枚举密钥数量与累计耗时曲线"></canvas><p id="chart-description" class="hint" aria-live="polite">执行搜索后绘制。</p></div>
+      <div class="card visual-card"><h3>???????????</h3><p class="visual-intro">???????????????????????????????????????? 0?</p><div id="candidate-visual"><div class="empty-state">????????????????</div></div></div>
+    </section>
+    <section id="panel-collision" class="panel" role="tabpanel" aria-labelledby="tab-collision" hidden>
+      <div class="panel-heading"><div><p class="eyebrow">EXPERIMENT 05</p><h2>相同的密文，未必来自同一把钥匙</h2><p>固定一个明文，统计全部密钥对应的密文，直接寻找不同密钥之间的碰撞。</p></div><span class="tag">统计 + 原理</span></div>
+      <div class="two-col"><form id="collision-form" class="card"><h3>固定明文，改变密钥</h3><label for="collision-plaintext">8 位明文</label><input id="collision-plaintext" class="mono" value="00000000" pattern="[01]{8}" required><p class="hint">将枚举 1024 个密钥，按输出密文分组。</p><button class="primary" type="submit">统计密钥碰撞 →</button><div class="explanation"><h4>为什么必然存在碰撞？</h4><p>固定明文时，1024 个密钥只能映射到最多 256 个密文。根据鸽巢原理，至少两个不同密钥产生同一密文。</p><p>这不表示每一对明密文都有多个密钥，也不表示这些密钥对其他明文仍然等价。</p></div></form><div class="card"><h3>碰撞统计</h3><div id="collision-result" class="readout" aria-live="polite">等待分析。全体 256 个明文的穷举结论见仓库测试报告。</div></div></div>
+      <div class="card visual-card"><h3>???? ? ???????????</h3><div id="collision-visual"><div class="empty-state">??????????????????</div></div></div>
+    </section>
+    <footer><span>信息安全导论 / S-DES 算法实现</span><span>教学实验 · 10 位密钥不适合保护真实数据</span></footer>
+  </main>
+</body>
+</html>

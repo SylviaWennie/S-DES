@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "browser": "Chromium headless",
+  "browser_version": "153.0.8010.12",
+  "viewports": [
+    [
+      1440,
+      1100
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "checks": [
+    "all 20 encryption stages; exact course permutations, LS-1 then LS-2, SVG wires and bit values",
+    "round F diagrams, XOR arithmetic, S-box row/column and revised S-box2 values",
+    "play advances stages, pause freezes progress, previous/next, reset and speed selection",
+    "decryption uses K2 then K1 and all diagrams reconstruct original plaintext",
+    "revised S-box2 third row exercised: input 1100 selects row 10, column 10, output 01",
+    "new cipher run replaces old playback; invalid binary key rejected",
+    "five public demo vectors verified across independent A/B implementations and both directional animations",
+    "per-row replay selection; all 256 plaintexts simulated; downloaded record exactly matches actual API results",
+    "malformed simulation plaintext reports an error; subsequent run replaces rows and visualization",
+    "390px viewport has no page overflow across all 20 diagrams and both peer directions",
+    "prefers-reduced-motion preserves explicit stage playback and manual controls",
+    "ASCII 14-byte diagram, actual bit values, space sample and decryption direction; byte drill-down to full cipher",
+    "candidate convergence diagram exact counts; collision histogram counts sum to 240 ciphertext groups",
+    "no browser JavaScript errors and no external requests"
+  ],
+  "page_errors": [],
+  "external_requests": [],
+  "note": "个人本机模拟与独立浏览器验证；不表示真人跨组实测。截图仅包含页面内容。"
+}

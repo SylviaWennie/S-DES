@@ -1,0 +1,31 @@
+# 原始课程材料及私人记录：未来公开仓库时不提交。
+/作业要求/
+/private/
+/local-results/
+# 本地筹备、隐私审查和证据制作工具，不随课程成果上传。
+/scripts/
+/.github/
+/requirements-dev.txt
+/docs/privacy.md
+/docs/solo-plan.md
+/docs/cross-testing.md
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python / editors / local caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

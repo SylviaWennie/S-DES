@@ -1,0 +1,2844 @@
+{
+  "spec_id": "course-sdes-v1-ls1-ls2-sbox2-3012",
+  "environment": {
+    "python": "3.12.7",
+    "system": "Windows"
+  },
+  "method": {
+    "clock": "perf_counter_ns",
+    "unit": "ms",
+    "thread_count": 1,
+    "warmup": "single-pair and three-pair runs before nine trials; subkeys cached",
+    "timing_includes": "all 1024 candidate checks plus progress sampling",
+    "timing_excludes": "input parsing, network, chart rendering"
+  },
+  "pairs": [
+    {
+      "plaintext": "00000000",
+      "ciphertext": "00001110"
+    },
+    {
+      "plaintext": "00000001",
+      "ciphertext": "10000001"
+    },
+    {
+      "plaintext": "00001000",
+      "ciphertext": "01110100"
+    }
+  ],
+  "single_pair": {
+    "keys": [
+      "1000110110",
+      "1001111110",
+      "1010000010",
+      "1011001010"
+    ],
+    "count": 4,
+    "checked": 1024,
+    "prefix_counts": [
+      4
+    ],
+    "elapsed_ms": 13.2988,
+    "samples": [
+      {
+        "checked": 0,
+        "elapsed_ms": 0.0,
+        "matches": 0
+      },
+      {
+        "checked": 32,
+        "elapsed_ms": 0.4415,
+        "matches": 0
+      },
+      {
+        "checked": 64,
+        "elapsed_ms": 0.8775,
+        "matches": 0
+      },
+      {
+        "checked": 96,
+        "elapsed_ms": 1.4123,
+        "matches": 0
+      },
+      {
+        "checked": 128,
+        "elapsed_ms": 1.8126,
+        "matches": 0
+      },
+      {
+        "checked": 160,
+        "elapsed_ms": 2.1861,
+        "matches": 0
+      },
+      {
+        "checked": 192,
+        "elapsed_ms": 2.5566,
+        "matches": 0
+      },
+      {
+        "checked": 224,
+        "elapsed_ms": 2.9432,
+        "matches": 0
+      },
+      {
+        "checked": 256,
+        "elapsed_ms": 3.321,
+        "matches": 0
+      },
+      {
+        "checked": 288,
+        "elapsed_ms": 3.9717,
+        "matches": 0
+      },
+      {
+        "checked": 320,
+        "elapsed_ms": 4.4057,
+        "matches": 0
+      },
+      {
+        "checked": 352,
+        "elapsed_ms": 4.8499,
+        "matches": 0
+      },
+      {
+        "checked": 384,
+        "elapsed_ms": 5.2938,
+        "matches": 0
+      },
+      {
+        "checked": 416,
+        "elapsed_ms": 5.7455,
+        "matches": 0
+      },
+      {
+        "checked": 448,
+        "elapsed_ms": 6.1531,
+        "matches": 0
+      },
+      {
+        "checked": 480,
+        "elapsed_ms": 6.5696,
+        "matches": 0
+      },
+      {
+        "checked": 512,
+        "elapsed_ms": 6.949,
+        "matches": 0
+      },
+      {
+        "checked": 544,
+        "elapsed_ms": 7.3389,
+        "matches": 0
+      },
+      {
+        "checked": 576,
+        "elapsed_ms": 7.7627,
+        "matches": 1
+      },
+      {
+        "checked": 608,
+        "elapsed_ms": 8.1676,
+        "matches": 1
+      },
+      {
+        "checked": 640,
+        "elapsed_ms": 8.5505,
+        "matches": 2
+      },
+      {
+        "checked": 672,
+        "elapsed_ms": 8.9359,
+        "matches": 3
+      },
+      {
+        "checked": 704,
+        "elapsed_ms": 9.3576,
+        "matches": 3
+      },
+      {
+        "checked": 736,
+        "elapsed_ms": 9.7588,
+        "matches": 4
+      },
+      {
+        "checked": 768,
+        "elapsed_ms": 10.1588,
+        "matches": 4
+      },
+      {
+        "checked": 800,
+        "elapsed_ms": 10.5434,
+        "matches": 4
+      },
+      {
+        "checked": 832,
+        "elapsed_ms": 10.9464,
+        "matches": 4
+      },
+      {
+        "checked": 864,
+        "elapsed_ms": 11.3446,
+        "matches": 4
+      },
+      {
+        "checked": 896,
+        "elapsed_ms": 11.7363,
+        "matches": 4
+      },
+      {
+        "checked": 928,
+        "elapsed_ms": 12.1231,
+        "matches": 4
+      },
+      {
+        "checked": 960,
+        "elapsed_ms": 12.5182,
+        "matches": 4
+      },
+      {
+        "checked": 992,
+        "elapsed_ms": 12.9064,
+        "matches": 4
+      },
+      {
+        "checked": 1024,
+        "elapsed_ms": 13.2969,
+        "matches": 4
+      }
+    ]
+  },
+  "three_pairs": {
+    "keys": [
+      "1010000010"
+    ],
+    "count": 1,
+    "checked": 1024,
+    "prefix_counts": [
+      4,
+      2,
+      1
+    ],
+    "elapsed_ms": 9.2217,
+    "samples": [
+      {
+        "checked": 0,
+        "elapsed_ms": 0.0,
+        "matches": 0
+      },
+      {
+        "checked": 32,
+        "elapsed_ms": 0.2438,
+        "matches": 0
+      },
+      {
+        "checked": 64,
+        "elapsed_ms": 0.4739,
+        "matches": 0
+      },
+      {
+        "checked": 96,
+        "elapsed_ms": 0.7183,
+        "matches": 0
+      },
+      {
+        "checked": 128,
+        "elapsed_ms": 0.9612,
+        "matches": 0
+      },
+      {
+        "checked": 160,
+        "elapsed_ms": 1.1992,
+        "matches": 0
+      },
+      {
+        "checked": 192,
+        "elapsed_ms": 1.4324,
+        "matches": 0
+      },
+      {
+        "checked": 224,
+        "elapsed_ms": 1.6884,
+        "matches": 0
+      },
+      {
+        "checked": 256,
+        "elapsed_ms": 1.9516,
+        "matches": 0
+      },
+      {
+        "checked": 288,
+        "elapsed_ms": 2.1982,
+        "matches": 0
+      },
+      {
+        "checked": 320,
+        "elapsed_ms": 2.4472,
+        "matches": 0
+      },
+      {
+        "checked": 352,
+        "elapsed_ms": 2.6875,
+        "matches": 0
+      },
+      {
+        "checked": 384,
+        "elapsed_ms": 2.9405,
+        "matches": 0
+      },
+      {
+        "checked": 416,
+        "elapsed_ms": 3.1796,
+        "matches": 0
+      },
+      {
+        "checked": 448,
+        "elapsed_ms": 3.4101,
+        "matches": 0
+      },
+      {
+        "checked": 480,
+        "elapsed_ms": 3.6497,
+        "matches": 0
+      },
+      {
+        "checked": 512,
+        "elapsed_ms": 3.9142,
+        "matches": 0
+      },
+      {
+        "checked": 544,
+        "elapsed_ms": 4.1645,
+        "matches": 0
+      },
+      {
+        "checked": 576,
+        "elapsed_ms": 4.4172,
+        "matches": 0
+      },
+      {
+        "checked": 608,
+        "elapsed_ms": 4.6563,
+        "matches": 0
+      },
+      {
+        "checked": 640,
+        "elapsed_ms": 4.9109,
+        "matches": 0
+      },
+      {
+        "checked": 672,
+        "elapsed_ms": 5.1594,
+        "matches": 1
+      },
+      {
+        "checked": 704,
+        "elapsed_ms": 5.4163,
+        "matches": 1
+      },
+      {
+        "checked": 736,
+        "elapsed_ms": 5.6742,
+        "matches": 1
+      },
+      {
+        "checked": 768,
+        "elapsed_ms": 5.9279,
+        "matches": 1
+      },
+      {
+        "checked": 800,
+        "elapsed_ms": 6.168,
+        "matches": 1
+      },
+      {
+        "checked": 832,
+        "elapsed_ms": 6.4093,
+        "matches": 1
+      },
+      {
+        "checked": 864,
+        "elapsed_ms": 6.655,
+        "matches": 1
+      },
+      {
+        "checked": 896,
+        "elapsed_ms": 7.2695,
+        "matches": 1
+      },
+      {
+        "checked": 928,
+        "elapsed_ms": 7.5789,
+        "matches": 1
+      },
+      {
+        "checked": 960,
+        "elapsed_ms": 8.4349,
+        "matches": 1
+      },
+      {
+        "checked": 992,
+        "elapsed_ms": 8.7839,
+        "matches": 1
+      },
+      {
+        "checked": 1024,
+        "elapsed_ms": 9.2176,
+        "matches": 1
+      }
+    ]
+  },
+  "duplicate_pairs": {
+    "keys": [
+      "1000110110",
+      "1001111110",
+      "1010000010",
+      "1011001010"
+    ],
+    "count": 4,
+    "checked": 1024,
+    "prefix_counts": [
+      4,
+      4
+    ],
+    "elapsed_ms": 10.0693,
+    "samples": [
+      {
+        "checked": 0,
+        "elapsed_ms": 0.0,
+        "matches": 0
+      },
+      {
+        "checked": 32,
+        "elapsed_ms": 0.5184,
+        "matches": 0
+      },
+      {
+        "checked": 64,
+        "elapsed_ms": 0.8689,
+        "matches": 0
+      },
+      {
+        "checked": 96,
+        "elapsed_ms": 1.2314,
+        "matches": 0
+      },
+      {
+        "checked": 128,
+        "elapsed_ms": 1.5774,
+        "matches": 0
+      },
+      {
+        "checked": 160,
+        "elapsed_ms": 1.9487,
+        "matches": 0
+      },
+      {
+        "checked": 192,
+        "elapsed_ms": 2.4761,
+        "matches": 0
+      },
+      {
+        "checked": 224,
+        "elapsed_ms": 2.8511,
+        "matches": 0
+      },
+      {
+        "checked": 256,
+        "elapsed_ms": 3.1976,
+        "matches": 0
+      },
+      {
+        "checked": 288,
+        "elapsed_ms": 3.5151,
+        "matches": 0
+      },
+      {
+        "checked": 320,
+        "elapsed_ms": 3.8093,
+        "matches": 0
+      },
+      {
+        "checked": 352,
+        "elapsed_ms": 4.0959,
+        "matches": 0
+      },
+      {
+        "checked": 384,
+        "elapsed_ms": 4.4167,
+        "matches": 0
+      },
+      {
+        "checked": 416,
+        "elapsed_ms": 4.743,
+        "matches": 0
+      },
+      {
+        "checked": 448,
+        "elapsed_ms": 5.0835,
+        "matches": 0
+      },
+      {
+        "checked": 480,
+        "elapsed_ms": 5.376,
+        "matches": 0
+      },
+      {
+        "checked": 512,
+        "elapsed_ms": 5.642,
+        "matches": 0
+      },
+      {
+        "checked": 544,
+        "elapsed_ms": 5.9039,
+        "matches": 0
+      },
+      {
+        "checked": 576,
+        "elapsed_ms": 6.1855,
+        "matches": 1
+      },
+      {
+        "checked": 608,
+        "elapsed_ms": 6.4362,
+        "matches": 1
+      },
+      {
+        "checked": 640,
+        "elapsed_ms": 6.6802,
+        "matches": 2
+      },
+      {
+        "checked": 672,
+        "elapsed_ms": 6.9858,
+        "matches": 3
+      },
+      {
+        "checked": 704,
+        "elapsed_ms": 7.2971,
+        "matches": 3
+      },
+      {
+        "checked": 736,
+        "elapsed_ms": 7.5905,
+        "matches": 4
+      },
+      {
+        "checked": 768,
+        "elapsed_ms": 7.8913,
+        "matches": 4
+      },
+      {
+        "checked": 800,
+        "elapsed_ms": 8.1758,
+        "matches": 4
+      },
+      {
+        "checked": 832,
+        "elapsed_ms": 8.4503,
+        "matches": 4
+      },
+      {
+        "checked": 864,
+        "elapsed_ms": 8.7039,
+        "matches": 4
+      },
+      {
+        "checked": 896,
+        "elapsed_ms": 8.9536,
+        "matches": 4
+      },
+      {
+        "checked": 928,
+        "elapsed_ms": 9.2127,
+        "matches": 4
+      },
+      {
+        "checked": 960,
+        "elapsed_ms": 9.4534,
+        "matches": 4
+      },
+      {
+        "checked": 992,
+        "elapsed_ms": 9.6891,
+        "matches": 4
+      },
+      {
+        "checked": 1024,
+        "elapsed_ms": 10.065,
+        "matches": 4
+      }
+    ]
+  },
+  "less_informative_third_pair": {
+    "keys": [
+      "1010000010",
+      "1011001010"
+    ],
+    "count": 2,
+    "checked": 1024,
+    "prefix_counts": [
+      4,
+      2,
+      2
+    ],
+    "elapsed_ms": 9.1139,
+    "samples": [
+      {
+        "checked": 0,
+        "elapsed_ms": 0.0,
+        "matches": 0
+      },
+      {
+        "checked": 32,
+        "elapsed_ms": 0.2793,
+        "matches": 0
+      },
+      {
+        "checked": 64,
+        "elapsed_ms": 0.5623,
+        "matches": 0
+      },
+      {
+        "checked": 96,
+        "elapsed_ms": 0.8498,
+        "matches": 0
+      },
+      {
+        "checked": 128,
+        "elapsed_ms": 1.1335,
+        "matches": 0
+      },
+      {
+        "checked": 160,
+        "elapsed_ms": 1.3997,
+        "matches": 0
+      },
+      {
+        "checked": 192,
+        "elapsed_ms": 1.6623,
+        "matches": 0
+      },
+      {
+        "checked": 224,
+        "elapsed_ms": 1.9053,
+        "matches": 0
+      },
+      {
+        "checked": 256,
+        "elapsed_ms": 2.136,
+        "matches": 0
+      },
+      {
+        "checked": 288,
+        "elapsed_ms": 2.3849,
+        "matches": 0
+      },
+      {
+        "checked": 320,
+        "elapsed_ms": 2.6313,
+        "matches": 0
+      },
+      {
+        "checked": 352,
+        "elapsed_ms": 2.8758,
+        "matches": 0
+      },
+      {
+        "checked": 384,
+        "elapsed_ms": 3.1245,
+        "matches": 0
+      },
+      {
+        "checked": 416,
+        "elapsed_ms": 3.3708,
+        "matches": 0
+      },
+      {
+        "checked": 448,
+        "elapsed_ms": 3.6105,
+        "matches": 0
+      },
+      {
+        "checked": 480,
+        "elapsed_ms": 3.8429,
+        "matches": 0
+      },
+      {
+        "checked": 512,
+        "elapsed_ms": 4.101,
+        "matches": 0
+      },
+      {
+        "checked": 544,
+        "elapsed_ms": 4.3446,
+        "matches": 0
+      },
+      {
+        "checked": 576,
+        "elapsed_ms": 4.6114,
+        "matches": 0
+      },
+      {
+        "checked": 608,
+        "elapsed_ms": 4.869,
+        "matches": 0
+      },
+      {
+        "checked": 640,
+        "elapsed_ms": 5.1157,
+        "matches": 0
+      },
+      {
+        "checked": 672,
+        "elapsed_ms": 5.3863,
+        "matches": 1
+      },
+      {
+        "checked": 704,
+        "elapsed_ms": 5.6236,
+        "matches": 1
+      },
+      {
+        "checked": 736,
+        "elapsed_ms": 6.071,
+        "matches": 2
+      },
+      {
+        "checked": 768,
+        "elapsed_ms": 6.398,
+        "matches": 2
+      },
+      {
+        "checked": 800,
+        "elapsed_ms": 6.6698,
+        "matches": 2
+      },
+      {
+        "checked": 832,
+        "elapsed_ms": 6.9316,
+        "matches": 2
+      },
+      {
+        "checked": 864,
+        "elapsed_ms": 7.3503,
+        "matches": 2
+      },
+      {
+        "checked": 896,
+        "elapsed_ms": 7.6389,
+        "matches": 2
+      },
+      {
+        "checked": 928,
+        "elapsed_ms": 8.2158,
+        "matches": 2
+      },
+      {
+        "checked": 960,
+        "elapsed_ms": 8.5435,
+        "matches": 2
+      },
+      {
+        "checked": 992,
+        "elapsed_ms": 8.8304,
+        "matches": 2
+      },
+      {
+        "checked": 1024,
+        "elapsed_ms": 9.1124,
+        "matches": 2
+      }
+    ]
+  },
+  "contradictory_pairs": {
+    "keys": [],
+    "count": 0,
+    "checked": 1024,
+    "prefix_counts": [
+      4,
+      0
+    ],
+    "elapsed_ms": 8.8996,
+    "samples": [
+      {
+        "checked": 0,
+        "elapsed_ms": 0.0,
+        "matches": 0
+      },
+      {
+        "checked": 32,
+        "elapsed_ms": 0.266,
+        "matches": 0
+      },
+      {
+        "checked": 64,
+        "elapsed_ms": 0.5221,
+        "matches": 0
+      },
+      {
+        "checked": 96,
+        "elapsed_ms": 0.7787,
+        "matches": 0
+      },
+      {
+        "checked": 128,
+        "elapsed_ms": 1.0272,
+        "matches": 0
+      },
+      {
+        "checked": 160,
+        "elapsed_ms": 1.2683,
+        "matches": 0
+      },
+      {
+        "checked": 192,
+        "elapsed_ms": 1.5052,
+        "matches": 0
+      },
+      {
+        "checked": 224,
+        "elapsed_ms": 1.7445,
+        "matches": 0
+      },
+      {
+        "checked": 256,
+        "elapsed_ms": 2.007,
+        "matches": 0
+      },
+      {
+        "checked": 288,
+        "elapsed_ms": 2.2602,
+        "matches": 0
+      },
+      {
+        "checked": 320,
+        "elapsed_ms": 2.5047,
+        "matches": 0
+      },
+      {
+        "checked": 352,
+        "elapsed_ms": 2.8181,
+        "matches": 0
+      },
+      {
+        "checked": 384,
+        "elapsed_ms": 3.1773,
+        "matches": 0
+      },
+      {
+        "checked": 416,
+        "elapsed_ms": 3.4771,
+        "matches": 0
+      },
+      {
+        "checked": 448,
+        "elapsed_ms": 3.8041,
+        "matches": 0
+      },
+      {
+        "checked": 480,
+        "elapsed_ms": 4.098,
+        "matches": 0
+      },
+      {
+        "checked": 512,
+        "elapsed_ms": 4.3885,
+        "matches": 0
+      },
+      {
+        "checked": 544,
+        "elapsed_ms": 4.6801,
+        "matches": 0
+      },
+      {
+        "checked": 576,
+        "elapsed_ms": 4.9746,
+        "matches": 0
+      },
+      {
+        "checked": 608,
+        "elapsed_ms": 5.2294,
+        "matches": 0
+      },
+      {
+        "checked": 640,
+        "elapsed_ms": 5.4943,
+        "matches": 0
+      },
+      {
+        "checked": 672,
+        "elapsed_ms": 5.7517,
+        "matches": 0
+      },
+      {
+        "checked": 704,
+        "elapsed_ms": 6.002,
+        "matches": 0
+      },
+      {
+        "checked": 736,
+        "elapsed_ms": 6.4067,
+        "matches": 0
+      },
+      {
+        "checked": 768,
+        "elapsed_ms": 6.6643,
+        "matches": 0
+      },
+      {
+        "checked": 800,
+        "elapsed_ms": 6.9071,
+        "matches": 0
+      },
+      {
+        "checked": 832,
+        "elapsed_ms": 7.1939,
+        "matches": 0
+      },
+      {
+        "checked": 864,
+        "elapsed_ms": 7.5059,
+        "matches": 0
+      },
+      {
+        "checked": 896,
+        "elapsed_ms": 7.8147,
+        "matches": 0
+      },
+      {
+        "checked": 928,
+        "elapsed_ms": 8.0953,
+        "matches": 0
+      },
+      {
+        "checked": 960,
+        "elapsed_ms": 8.3643,
+        "matches": 0
+      },
+      {
+        "checked": 992,
+        "elapsed_ms": 8.6317,
+        "matches": 0
+      },
+      {
+        "checked": 1024,
+        "elapsed_ms": 8.8981,
+        "matches": 0
+      }
+    ]
+  },
+  "repeated_trials": [
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 10.824,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.5787,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 1.8367,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 2.1322,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 2.4089,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 2.6746,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 3.6096,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 3.8821,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 4.3025,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 4.5712,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 4.835,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 5.1005,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 5.3546,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 5.6098,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 5.8733,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 6.1574,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 6.4357,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 6.7049,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 6.9552,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 7.2239,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 7.4772,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 7.7653,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 8.015,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 8.2701,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 8.5064,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 8.7535,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 9.0,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 9.2388,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 9.5908,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 9.9215,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 10.2498,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 10.5292,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 10.8223,
+          "matches": 1
+        }
+      ]
+    },
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 10.3933,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.2648,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.5287,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 0.7846,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 1.0393,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.2837,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.5242,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 1.7757,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 2.0129,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.257,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.5073,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 2.7478,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 2.9855,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.2332,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 3.4773,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 4.4192,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 5.5628,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 5.9727,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 6.3293,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 6.6801,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 7.0953,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 7.4541,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 7.7922,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 8.1324,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 8.3971,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 8.6606,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 8.9131,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 9.1694,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 9.4055,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 9.6559,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 9.8939,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 10.1488,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 10.392,
+          "matches": 1
+        }
+      ]
+    },
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 7.811,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.2517,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.488,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 0.7282,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 0.9679,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.2116,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.4485,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 1.6945,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 1.9355,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.1753,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.4195,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 2.6702,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 2.9148,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.1511,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 3.399,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 3.6508,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 3.903,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 4.1521,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 4.4029,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 4.6416,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 4.8916,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 5.1463,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 5.3882,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 5.646,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 5.8856,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 6.139,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 6.3864,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 6.615,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 6.8501,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 7.0909,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 7.3276,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 7.5666,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 7.8096,
+          "matches": 1
+        }
+      ]
+    },
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 9.498,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.2436,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.4943,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 0.8196,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 1.0534,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.299,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.5476,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 1.7832,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 2.3574,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.6591,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.9628,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 3.2488,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 3.518,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.8488,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 4.128,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 4.4122,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 4.6853,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 5.2208,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 5.5357,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 5.8122,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 6.0694,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 6.3426,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 6.7022,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 7.099,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 7.392,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 7.6806,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 7.9506,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 8.2177,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 8.4879,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 8.7412,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 8.9949,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 9.2491,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 9.4961,
+          "matches": 1
+        }
+      ]
+    },
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 8.9179,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.2438,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.4827,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 0.9091,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 1.2693,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.5406,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.7791,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 2.0207,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 2.2635,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.5151,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.7669,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 3.0075,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 3.2534,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.4966,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 3.7438,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 3.9775,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 4.2263,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 4.4668,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 4.7289,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 4.9681,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 5.2076,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 5.4794,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 5.7176,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 6.0155,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 6.5306,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 6.9815,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 7.2365,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 7.5022,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 7.7646,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 8.0719,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 8.3878,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 8.6231,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 8.916,
+          "matches": 1
+        }
+      ]
+    },
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 8.2949,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.4293,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.652,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 0.9183,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 1.1832,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.4514,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.7181,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 1.9834,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 2.2429,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.5036,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.7542,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 3.0276,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 3.2996,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.5461,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 3.7973,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 4.0452,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 4.2884,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 4.5344,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 4.7891,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 5.043,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 5.2916,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 5.5549,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 5.8055,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 6.0742,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 6.3278,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 6.5863,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 6.8309,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 7.0755,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 7.3237,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 7.5656,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 7.8062,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 8.049,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 8.2929,
+          "matches": 1
+        }
+      ]
+    },
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 9.0668,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.2464,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.5026,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 0.7493,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 0.9831,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.2398,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.4793,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 1.7248,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 1.963,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.2025,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.4394,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 2.6828,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 2.9215,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.1581,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 3.4049,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 3.6384,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 3.9346,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 4.2067,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 4.6811,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 5.084,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 5.44,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 5.828,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 6.1788,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 6.5867,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 6.8762,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 7.1248,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 7.3749,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 7.6236,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 7.8685,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 8.1078,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 8.3647,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 8.7448,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 9.0643,
+          "matches": 1
+        }
+      ]
+    },
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 8.9169,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.3866,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.8119,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 1.1047,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 1.4472,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.706,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.8762,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 2.046,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 2.212,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.6417,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.9595,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 3.2743,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 3.5848,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.8963,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 4.1684,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 4.4203,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 4.663,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 4.9089,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 5.1644,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 5.4031,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 5.7516,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 6.055,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 6.3331,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 6.6135,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 6.8799,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 7.1569,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 7.4255,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 7.6951,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 7.9666,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 8.2108,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 8.4477,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 8.6788,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 8.9155,
+          "matches": 1
+        }
+      ]
+    },
+    {
+      "keys": [
+        "1010000010"
+      ],
+      "count": 1,
+      "checked": 1024,
+      "prefix_counts": [
+        4,
+        2,
+        1
+      ],
+      "elapsed_ms": 8.1399,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.2509,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.4954,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 0.7351,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 0.9735,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.2171,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.4598,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 1.7001,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 1.9388,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.198,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.4426,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 2.6917,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 2.9352,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.1898,
+          "matches": 0
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 3.4349,
+          "matches": 0
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 3.6773,
+          "matches": 0
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 3.9129,
+          "matches": 0
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 4.1535,
+          "matches": 0
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 4.4136,
+          "matches": 0
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 4.6516,
+          "matches": 0
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 4.903,
+          "matches": 0
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 5.1651,
+          "matches": 1
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 5.4042,
+          "matches": 1
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 5.6545,
+          "matches": 1
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 5.8882,
+          "matches": 1
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 6.1224,
+          "matches": 1
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 6.3594,
+          "matches": 1
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 6.6062,
+          "matches": 1
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 6.8437,
+          "matches": 1
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 7.088,
+          "matches": 1
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 7.5516,
+          "matches": 1
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 7.8406,
+          "matches": 1
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 8.1378,
+          "matches": 1
+        }
+      ]
+    }
+  ],
+  "random_pair_experiment": {
+    "seed": 20261005,
+    "plaintext": "10001101",
+    "key": "1001011110",
+    "ciphertext": "10110110",
+    "search": {
+      "keys": [
+        "0110011011",
+        "0111010011",
+        "1001011110",
+        "1010010001"
+      ],
+      "count": 4,
+      "checked": 1024,
+      "prefix_counts": [
+        4
+      ],
+      "elapsed_ms": 8.5359,
+      "samples": [
+        {
+          "checked": 0,
+          "elapsed_ms": 0.0,
+          "matches": 0
+        },
+        {
+          "checked": 32,
+          "elapsed_ms": 0.245,
+          "matches": 0
+        },
+        {
+          "checked": 64,
+          "elapsed_ms": 0.4878,
+          "matches": 0
+        },
+        {
+          "checked": 96,
+          "elapsed_ms": 0.73,
+          "matches": 0
+        },
+        {
+          "checked": 128,
+          "elapsed_ms": 0.9639,
+          "matches": 0
+        },
+        {
+          "checked": 160,
+          "elapsed_ms": 1.2066,
+          "matches": 0
+        },
+        {
+          "checked": 192,
+          "elapsed_ms": 1.4822,
+          "matches": 0
+        },
+        {
+          "checked": 224,
+          "elapsed_ms": 1.7565,
+          "matches": 0
+        },
+        {
+          "checked": 256,
+          "elapsed_ms": 2.0633,
+          "matches": 0
+        },
+        {
+          "checked": 288,
+          "elapsed_ms": 2.3301,
+          "matches": 0
+        },
+        {
+          "checked": 320,
+          "elapsed_ms": 2.5819,
+          "matches": 0
+        },
+        {
+          "checked": 352,
+          "elapsed_ms": 2.8346,
+          "matches": 0
+        },
+        {
+          "checked": 384,
+          "elapsed_ms": 3.0762,
+          "matches": 0
+        },
+        {
+          "checked": 416,
+          "elapsed_ms": 3.3245,
+          "matches": 1
+        },
+        {
+          "checked": 448,
+          "elapsed_ms": 3.5652,
+          "matches": 1
+        },
+        {
+          "checked": 480,
+          "elapsed_ms": 3.8441,
+          "matches": 2
+        },
+        {
+          "checked": 512,
+          "elapsed_ms": 4.0894,
+          "matches": 2
+        },
+        {
+          "checked": 544,
+          "elapsed_ms": 4.6621,
+          "matches": 2
+        },
+        {
+          "checked": 576,
+          "elapsed_ms": 4.9021,
+          "matches": 2
+        },
+        {
+          "checked": 608,
+          "elapsed_ms": 5.1474,
+          "matches": 3
+        },
+        {
+          "checked": 640,
+          "elapsed_ms": 5.3972,
+          "matches": 3
+        },
+        {
+          "checked": 672,
+          "elapsed_ms": 5.6646,
+          "matches": 4
+        },
+        {
+          "checked": 704,
+          "elapsed_ms": 5.9375,
+          "matches": 4
+        },
+        {
+          "checked": 736,
+          "elapsed_ms": 6.1805,
+          "matches": 4
+        },
+        {
+          "checked": 768,
+          "elapsed_ms": 6.4262,
+          "matches": 4
+        },
+        {
+          "checked": 800,
+          "elapsed_ms": 6.6665,
+          "matches": 4
+        },
+        {
+          "checked": 832,
+          "elapsed_ms": 6.9101,
+          "matches": 4
+        },
+        {
+          "checked": 864,
+          "elapsed_ms": 7.1551,
+          "matches": 4
+        },
+        {
+          "checked": 896,
+          "elapsed_ms": 7.3942,
+          "matches": 4
+        },
+        {
+          "checked": 928,
+          "elapsed_ms": 7.6482,
+          "matches": 4
+        },
+        {
+          "checked": 960,
+          "elapsed_ms": 7.9076,
+          "matches": 4
+        },
+        {
+          "checked": 992,
+          "elapsed_ms": 8.1484,
+          "matches": 4
+        },
+        {
+          "checked": 1024,
+          "elapsed_ms": 8.5276,
+          "matches": 4
+        }
+      ]
+    }
+  },
+  "timing_summary_ms": {
+    "minimum": 7.811,
+    "median": 8.9179,
+    "maximum": 10.824
+  },
+  "ascii": {
+    "plaintext": "This is a test",
+    "key": "1010000010",
+    "hex": "22 68 c7 27 62 c7 27 62 bd 62 4e f8 27 4e",
+    "binary": "00100010 01101000 11000111 00100111 01100010 11000111 00100111 01100010 10111101 01100010 01001110 11111000 00100111 01001110",
+    "restored": "This is a test"
+  },
+  "trace": {
+    "key": "1010000010",
+    "p10": "1000001100",
+    "ls1": "0000111000",
+    "ls2": "0010000011",
+    "k1": "10100100",
+    "k2": "01000011",
+    "ip": "11011101",
+    "swap": "11010010",
+    "rounds": [
+      {
+        "round": 1,
+        "input": "11011101",
+        "subkey": "10100100",
+        "ep": "11101011",
+        "xor": "01001111",
+        "sbox1": "11",
+        "sbox2": "11",
+        "p4": "1111",
+        "output": "00101101"
+      },
+      {
+        "round": 2,
+        "input": "11010010",
+        "subkey": "01000011",
+        "ep": "00010100",
+        "xor": "01010111",
+        "sbox1": "01",
+        "sbox2": "00",
+        "p4": "1000",
+        "output": "01010010"
+      }
+    ],
+    "result": "10001100"
+  },
+  "exchange_self_check": {
+    "passed": true,
+    "total": 6,
+    "results": [
+      {
+        "index": 1,
+        "encrypt_ok": true,
+        "decrypt_ok": true,
+        "actual_ciphertext": "00001110",
+        "actual_plaintext": "00000000"
+      },
+      {
+        "index": 2,
+        "encrypt_ok": true,
+        "decrypt_ok": true,
+        "actual_ciphertext": "10000001",
+        "actual_plaintext": "00000001"
+      },
+      {
+        "index": 3,
+        "encrypt_ok": true,
+        "decrypt_ok": true,
+        "actual_ciphertext": "01110100",
+        "actual_plaintext": "00001000"
+      },
+      {
+        "index": 4,
+        "encrypt_ok": true,
+        "decrypt_ok": true,
+        "actual_ciphertext": "10101100",
+        "actual_plaintext": "01111111"
+      },
+      {
+        "index": 5,
+        "encrypt_ok": true,
+        "decrypt_ok": true,
+        "actual_ciphertext": "10001100",
+        "actual_plaintext": "11010111"
+      },
+      {
+        "index": 6,
+        "encrypt_ok": true,
+        "decrypt_ok": true,
+        "actual_ciphertext": "11101010",
+        "actual_plaintext": "11111111"
+      }
+    ]
+  },
+  "personal_simulation_summary": {
+    "simulation": true,
+    "total": 256,
+    "passed": true,
+    "counts": {
+      "encrypt_equal": 256,
+      "a_to_b_ok": 256,
+      "b_to_a_ok": 256
+    }
+  }
+}
