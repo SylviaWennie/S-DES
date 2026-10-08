@@ -14,7 +14,7 @@ python app.py
 
 ![P10 置换盒动画回放：数据沿真实置换连线移动](docs/assets/permutation-demo.gif)
 
-上方是界面录制的教学回放，不代表算法耗时。另见 [S 盒查表](docs/assets/08-sbox.png)、[轮函数图](docs/assets/10-round-function.png) 和 [个人 A/B 模拟](docs/assets/09-simulation.png)。
+上方是界面录制的回放，不代表算法耗时。另见 [S 盒查表](docs/assets/08-sbox.png)、[轮函数图](docs/assets/10-round-function.png) 和 [个人 A/B 模拟](docs/assets/09-simulation.png)。
 
 ## 五关与证据
 
